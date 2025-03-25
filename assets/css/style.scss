@@ -115,16 +115,75 @@ header
   @include tab {
     display: block;
     cursor: pointer;
+    z-index: 999;
+    top: 4px;
+    right: 50px;
+    position: fixed;
+  }
+
+  &__circle {
     border-radius: 50%;
     width: 40px;
     height: 40px;
     line-height: 40px;
     border: #1C1C1C 1px solid;
-    z-index: 999;
-    top: 4px;
-    right: 16px;
-    position: fixed;
+    position: absolute;
   }
+}
+
+
+// ハンバーガーメニュー
+.hamburger-menu {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  border: none;
+  background: transparent;
+  appearance: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.hamburger-menu__bar {
+  display: inline-block;
+  width: 44%;
+  height: 1px;
+  background: #1C1C1C;
+  position: absolute;
+  left: 48%;
+  transform: translateX(-50%);
+  transition: .5s;
+
+}
+
+.hamburger-menu__bar:first-child {
+  top: 13px;
+}
+
+.hamburger-menu__bar:nth-child(2) {
+  top: 19px;
+}
+
+.hamburger-menu__bar:last-child {
+  top: 25px;
+}
+
+.hamburger-menu--open .hamburger-menu__bar {
+  top: 45%;
+  width: 54%;
+
+}
+
+.hamburger-menu--open .hamburger-menu__bar:first-child {
+  transform: translateX(-50%) translateY(-50%) rotate(28deg);
+}
+
+.hamburger-menu--open .hamburger-menu__bar:last-child {
+  transform: translateX(-50%) translateY(-50%) rotate(-28deg);
+}
+
+.hamburger-menu--open .hamburger-menu__bar:nth-child(2) {
+  display: none;
 }
 
 
@@ -175,59 +234,6 @@ header
 
 }
 
-// ハンバーガーメニュー
-.hamburger-menu {
-  width: 45px;
-  height: 45px;
-  position: relative;
-  border: none;
-  background: transparent;
-  appearance: none;
-  padding: 0;
-  cursor: pointer;
-}
-
-.hamburger-menu__bar {
-  display: inline-block;
-  width: 44%;
-  height: 1px;
-  background: #1C1C1C;
-  position: absolute;
-  left: 45%;
-  transform: translateX(-50%);
-  transition: .5s;
-
-}
-
-.hamburger-menu__bar:first-child {
-  top: 13px;
-}
-
-.hamburger-menu__bar:nth-child(2) {
-  top: 19px;
-}
-
-.hamburger-menu__bar:last-child {
-  top: 25px;
-}
-
-.hamburger-menu--open .hamburger-menu__bar {
-  top: 45%;
-  width: 54%;
-
-}
-
-.hamburger-menu--open .hamburger-menu__bar:first-child {
-  transform: translateX(-50%) translateY(-50%) rotate(28deg);
-}
-
-.hamburger-menu--open .hamburger-menu__bar:last-child {
-  transform: translateX(-50%) translateY(-50%) rotate(-28deg);
-}
-
-.hamburger-menu--open .hamburger-menu__bar:nth-child(2) {
-  display: none;
-}
 
 /* =================================
 メインビジュアル
