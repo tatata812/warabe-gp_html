@@ -115,88 +115,92 @@ header
   @include tab {
     display: block;
     cursor: pointer;
-    z-index: 999;
+    z-index: 99;
     top: 4px;
-    right: 50px;
+    right: 12px;
     position: fixed;
   }
 
-  &__circle {
-    border-radius: 50%;
+  &__btn-img {
     width: 40px;
-    height: 40px;
-    line-height: 40px;
-    border: #3100f4 1px solid;
-    position: absolute;
   }
+
+  // &__circle {
+  //   border-radius: 50%;
+  //   width: 40px;
+  //   height: 40px;
+  //   line-height: 40px;
+  //   border: #3100f4 1px solid;
+  //   position: absolute;
+  // }
 }
 
 
 // ハンバーガーメニュー
-.hamburger-menu {
-  width: 40px;
-  height: 40px;
-  position: relative;
-  border: none;
-  background: transparent;
-  appearance: none;
-  padding: 0;
-  cursor: pointer;
-}
+// .hamburger-menu {
+//   width: 40px;
+//   height: 40px;
+//   position: relative;
+//   border: none;
+//   background: transparent;
+//   appearance: none;
+//   padding: 0;
+//   cursor: pointer;
+// }
 
-.hamburger-menu__bar {
-  display: inline-block;
-  width: 44%;
-  height: 1px;
-  background: #1C1C1C;
-  position: absolute;
-  left: 48%;
-  transform: translateX(-50%);
-  transition: .5s;
+// .hamburger-menu__bar {
+//   display: inline-block;
+//   width: 44%;
+//   height: 1px;
+//   background: #1C1C1C;
+//   position: absolute;
+//   left: 48%;
+//   transform: translateX(-50%);
+//   transition: .5s;
 
-}
+// }
 
-.hamburger-menu__bar:first-child {
-  top: 13px;
-}
+// .hamburger-menu__bar:first-child {
+//   top: 13px;
+// }
 
-.hamburger-menu__bar:nth-child(2) {
-  top: 19px;
-}
+// .hamburger-menu__bar:nth-child(2) {
+//   top: 19px;
+// }
 
-.hamburger-menu__bar:last-child {
-  top: 25px;
-}
+// .hamburger-menu__bar:last-child {
+//   top: 25px;
+// }
 
-.ios:first-child {
-  top: 7px;
-}
+// .ios:first-child {
+//   top: 7px;
+// }
 
-.ios:nth-child(2) {
-  top: 14px;
-}
+// .ios:nth-child(2) {
+//   top: 14px;
+// }
 
-.ios:last-child {
-  top: 20px;
-}
+// .ios:last-child {
+//   top: 20px;
+// }
 
-.hamburger-menu--open .hamburger-menu__bar {
-  top: 45%;
-  width: 54%;
+// .hamburger-menu--open .hamburger-menu__bar {
+//   top: 45%;
+//   width: 54%;
 
-}
+// }
 
-.hamburger-menu--open .hamburger-menu__bar:first-child {
-  transform: translateX(-50%) translateY(-50%) rotate(28deg);
-}
+// .hamburger-menu--open .hamburger-menu__bar:first-child {
+//   transform: translateX(-50%) translateY(-50%) rotate(28deg);
+// }
 
-.hamburger-menu--open .hamburger-menu__bar:last-child {
-  transform: translateX(-50%) translateY(-50%) rotate(-28deg);
-}
+// .hamburger-menu--open .hamburger-menu__bar:last-child {
+//   transform: translateX(-50%) translateY(-50%) rotate(-28deg);
+// }
 
-.hamburger-menu--open .hamburger-menu__bar:nth-child(2) {
-  display: none;
-}
+// .hamburger-menu--open .hamburger-menu__bar:nth-child(2) {
+//   display: none;
+// }
 
 
 .header-sp {
@@ -214,7 +218,6 @@ header
 
   @include sp {
     padding: 24px;
-
   }
 
   &.active {
@@ -231,6 +234,13 @@ header
     background-color: #fff;
     padding: 12px;
   }
+
+
+  &__btn-img {
+    width: 40px;
+    margin: 0 0 0 auto;
+  }
+
 
   &__nav-item {
     text-align: right;

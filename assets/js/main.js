@@ -48,7 +48,7 @@ $(function () {
     if(agent.search(/iPhone/) != -1){
             $("hamburger-menu__bar").addClass("ios");
     }else if(agent.search(/Android/) != -1){　//Android用の記述
-          
+            $("").addClass("");
 }
 });
 
