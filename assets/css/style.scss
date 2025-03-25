@@ -126,7 +126,7 @@ header
     width: 40px;
     height: 40px;
     line-height: 40px;
-    border: #f40000 1px solid;
+    border: #3100f4 1px solid;
     position: absolute;
   }
 }
@@ -166,6 +166,18 @@ header
 
 .hamburger-menu__bar:last-child {
   top: 25px;
+}
+
+.ios:first-child {
+  top: 7px;
+}
+
+.ios:nth-child(2) {
+  top: 14px;
+}
+
+.ios:last-child {
+  top: 20px;
 }
 
 .hamburger-menu--open .hamburger-menu__bar {
