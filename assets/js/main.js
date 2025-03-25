@@ -1,26 +1,35 @@
 $(function () {
 
   $("#js-hamburger-menu, .navigation__link").click(function () {
-    $(".header-sp").toggleClass("active"); //ボタン自身に activeクラスを付与し
+    $(".header-sp,.black-bg,.header").toggleClass("active"); //ボタン自身に activeクラスを付与し
   });
   $(".header-sp").click(function () {
-    $(".header-sp").toggleClass("active"); //ボタン自身に activeクラスを付与し
+    $(".header-sp,.black-bg,.header").toggleClass("active"); 
+    $('.hamburger-menu').toggleClass('hamburger-menu--open');
   });
+
+    // ハンバーガーメニュー
+    $(function () {
+      $('#js-hamburger-menu, .navigation__link').on('click', function () {
+        $('.navigation').slideToggle(500);
+        $('.hamburger-menu').toggleClass('hamburger-menu--open')
+      });
+    });
 
   // ヘッダー隠れる動き
 
-  let startPos = 0;
-  let winScrollTop = 0;
-  const Header = $('.header');
-  $(window).on('scroll', function () {
-    winScrollTop = $(this).scrollTop();
-    if (winScrollTop >= startPos && winScrollTop > 100) { // ここにコードを追加
-      $(Header).addClass('is-hide');
-    } else {
-      $(Header).removeClass('is-hide');
-    }
-    startPos = winScrollTop;
-  });
+  // let startPos = 0;
+  // let winScrollTop = 0;
+  // const Header = $('.header');
+  // $(window).on('scroll', function () {
+  //   winScrollTop = $(this).scrollTop();
+  //   if (winScrollTop >= startPos && winScrollTop > 100) { // ここにコードを追加
+  //     $(Header).addClass('is-hide');
+  //   } else {
+  //     $(Header).removeClass('is-hide');
+  //   }
+  //   startPos = winScrollTop;
+  // });
 
 
   $(".top-to-js").click(function () {
@@ -33,13 +42,7 @@ $(function () {
   });
 
 
-  // ハンバーガーメニュー
-  $(function () {
-    $('#js-hamburger-menu, .navigation__link').on('click', function () {
-      $('.navigation').slideToggle(500)
-      $('.hamburger-menu').toggleClass('hamburger-menu--open')
-    });
-  });
+
 
 
 

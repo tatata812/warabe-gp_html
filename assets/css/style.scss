@@ -25,23 +25,20 @@ header
  ================================= */
 .header {
   position: fixed;
-  z-index: 999;
+  z-index: 99;
   top: 0;
   width: 100%;
   transition: transform 0.3s;
   background-color: #fff;
   height: 70px;
-  border-bottom: #44a136 2px solid;
-
 
   @include tab {
     height: 60px;
   }
 
-  &.is-hide {
-    transform: translateY(-100%);
-  }
-
+  &.active {
+    display: none;
+                }
 
   &__inner {
     display: flex;
@@ -50,7 +47,7 @@ header
     max-width: 1240px;
     margin: 0 auto;
     gap: 24px;
-    padding: 8px 0;
+    padding: 4px 16px;
 
 
     @include tab {
@@ -60,15 +57,16 @@ header
     }
   }
 
-  &__item {}
 
   &__ttl-wrap {
     padding: 0 0 0 3%;
-    max-width: 320px;
+    max-width: 100px;
     margin: 0 auto 0 0;
 
-    @include pc {
-      max-width: 220px;
+
+    @include tab {
+      max-width: 70px;
+
     }
 
   }
@@ -82,53 +80,66 @@ header
 
   &__menu-inner {
     display: flex;
-    gap: 24px;
+    gap: 40px;
 
-    @include pc{
-      gap: 12px;
+    @include pc {
+      gap: 24px;
 
 
     }
   }
 
-  &__menu {
-    color: #44a136;
-    font-weight: 700;
-
-  }
-
+  &__menu {}
 
   &__btn-wrap {
-    cursor: pointer;
-    background-color: #44a136;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    margin: 0 12px 0;
+    display: none;
 
-    @include sp {
-      background-color: #fff;
-      border-radius: 0;
-      width: auto;
-      line-height: auto;
-      margin: 0;
+    @include tab {
+      display: block;
+      cursor: pointer;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      margin: 0 12px 0;
+      border: #1C1C1C 1px solid;
+      z-index: 999;
+      position: relative;
     }
   }
 }
 
+.header-btn-wrap {
+  display: none;
+
+  @include tab {
+    display: block;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border: #1C1C1C 1px solid;
+    z-index: 999;
+    top: 4px;
+    right: 16px;
+    position: fixed;
+  }
+}
+
+
 .header-sp {
   opacity: 0;
   transition: all 0.3s;
-  transform: translate(0, -100%);
-  z-index: -1;
-  position: relative;
+  transform: translate(100%, 0);
+  z-index: 101;
+  position: fixed;
+  top: -4px;
+  right: 0;
   padding: 40px;
   background-color: #fff;
-
-
-
-
+  height: 100vh;
+  width: 90%;
 
   @include sp {
     padding: 24px;
@@ -139,7 +150,7 @@ header
     opacity: 1;
     transition: all 0.3s;
     transform: translate(0, 3px);
-    z-index: 999;
+    z-index: 100;
 
   }
 
@@ -151,6 +162,7 @@ header
   }
 
   &__nav-item {
+    text-align: right;
 
 
     &--margin {
@@ -158,43 +170,15 @@ header
     }
   }
 
-  &__ {}
 
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
 
 
 }
 
 // ハンバーガーメニュー
 .hamburger-menu {
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   position: relative;
   border: none;
   background: transparent;
@@ -207,40 +191,38 @@ header
   display: inline-block;
   width: 44%;
   height: 1px;
-  background: #ffffff;
+  background: #1C1C1C;
   position: absolute;
-  left: 50%;
+  left: 45%;
   transform: translateX(-50%);
   transition: .5s;
 
-  @include sp {
-    background-color: #44a136;
-
-  }
 }
 
 .hamburger-menu__bar:first-child {
-  top: 16px;
+  top: 13px;
 }
 
 .hamburger-menu__bar:nth-child(2) {
-  top: 24px;
+  top: 19px;
 }
 
 .hamburger-menu__bar:last-child {
-  top: 32px;
+  top: 25px;
 }
 
 .hamburger-menu--open .hamburger-menu__bar {
-  top: 50%;
+  top: 45%;
+  width: 54%;
+
 }
 
 .hamburger-menu--open .hamburger-menu__bar:first-child {
-  transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  transform: translateX(-50%) translateY(-50%) rotate(28deg);
 }
 
 .hamburger-menu--open .hamburger-menu__bar:last-child {
-  transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+  transform: translateX(-50%) translateY(-50%) rotate(-28deg);
 }
 
 .hamburger-menu--open .hamburger-menu__bar:nth-child(2) {
@@ -448,9 +430,9 @@ header
       margin: 0 0 12px;
 
       @include sp {
-text-align: left;  
+        text-align: left;
       }
-    } 
+    }
   }
 
   &__article-wrap {
@@ -467,11 +449,11 @@ text-align: left;
     flex-wrap: wrap;
     gap: 32px;
     align-items: center;
-    border-bottom: #44a136 1px solid;
+    border-bottom: #1C1C1C 1px solid;
     padding: 8px 2px;
 
     &:first-child {
-      border-top: #44a136 1px solid;
+      border-top: #1C1C1C 1px solid;
     }
 
     @include sp {
@@ -658,7 +640,7 @@ text-align: left;
 バナーセクション
  ================================= */
 
- .bnr-section {
+.bnr-section {
   background-color: #f8fbf2;
   padding: 40px 12px;
 
@@ -668,7 +650,7 @@ text-align: left;
     gap: 60px;
     align-items: center;
 
-    @include sp{
+    @include sp {
       flex-direction: column;
       gap: 24px;
 
@@ -676,9 +658,10 @@ text-align: left;
   }
 
   &__item {
-    max-width: 320px;  
-    @include sp{
-      max-width: 320px;    
+    max-width: 320px;
+
+    @include sp {
+      max-width: 320px;
     }
   }
 
@@ -688,7 +671,7 @@ text-align: left;
 
   &__ {}
 
- }
+}
 
 
 
@@ -697,14 +680,14 @@ footer
  ================================= */
 
 .footer {
-  background-color: #44a136;
-  
+  background-color: #1C1C1C;
+
   &__top {
     padding: 40px 12px;
-    
-    background-color: #44a136;
+
+    background-color: #1C1C1C;
   }
-  
+
   &__top-inner {
     max-width: 300px;
     margin: 0 auto;
@@ -716,6 +699,7 @@ footer
     font-size: 18px;
     margin: 0 0 18px;
     display: block;
+
     span {
       font-size: 80%;
       display: block;
@@ -754,10 +738,10 @@ footer
   }
 
   &__top-btn {
-position: absolute;
-right: -100px;
-top: 50%;
-transform: translateY(-50%);
+    position: absolute;
+    right: -100px;
+    top: 50%;
+    transform: translateY(-50%);
     cursor: pointer;
 
     @include pc {
@@ -778,15 +762,15 @@ transform: translateY(-50%);
 
   &__ {}
 
-  
-  
+
+
 
   &__bottom {
     text-align: center;
     font-size: 11px;
     padding: 8px;
     background-color: #fff;
-    color: #44a136;
+    color: #1C1C1C;
   }
 
   &__ {}
