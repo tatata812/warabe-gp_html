@@ -1,0 +1,694 @@
+<!-- <?php
+  $des="サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。"
+  ; ?> -->
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="email=no,telephone=no,address=no">
+  <!--!!!!!!!!!!!!!!!!!WPでは不要!!!!!!!!!!!!!!!!!!!!!-->
+  <title>個人情報保護方針</title>
+  <meta name="description" content="<?php echo $des; ?>">
+  <!--!!!!!!!!!!!!!!!!!公開時、allに変更する!!!!!!!!!!!!!!!!!!!!!-->
+  <meta name="robots" content="none">
+  <meta property="og:type" content="website">
+  <meta property="og:title"
+    content="<?php wp_title( '-', true, 'right' ); ?><?php bloginfo( 'name' ); ?> | <?php echo $des; ?>">
+  <meta property="og:description" content="<?php echo $des; ?>">
+  <meta property="og:site_name"
+    content="<?php wp_title( '-', true, 'right' ); ?><?php bloginfo( 'name' ); ?> | <?php echo $des; ?>">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>assets/img/fb.jpg">
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title"
+    content="<?php wp_title( '-', true, 'right' ); ?><?php bloginfo( 'name' ); ?> | <?php echo $des; ?>">
+  <meta name="twitter:description" content="<?php echo $des; ?>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+  <link rel="stylesheet" href="assets/css/html5reset-1.6.1.css">
+  <link rel="stylesheet" href="assets/css/style.css?20230220">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body class="wrap">
+
+  <header class="header">
+    <div class="header__inner">
+      <h1 class="header__ttl-wrap header__item"><a href="index.html" class="header__ttl"><img
+            src="assets/img/top/logo.png" alt=""></a>
+      </h1>
+      <nav class="header__menu-wrap header__item">
+        <div class="header__menu-inner">
+          <a href="overview.html" class="header__menu">協会概要</a>
+          <a href="about.html" class="header__menu">不動産鑑定士とは</a>
+          <a href="license.html" class="header__menu">不動産鑑定士になるには</a>
+          <a href="member.html" class="header__menu">会員紹介</a>
+          <a href="contact.html" class="header__menu">お問い合わせ</a>
+          <a href="access.html" class="header__menu">アクセス</a>
+        </div>
+      </nav>
+      <div class="header__btn-wrap header__item">
+        <button class="hamburger-menu" id="js-hamburger-menu">
+          <span class="hamburger-menu__bar"></span>
+          <span class="hamburger-menu__bar"></span>
+          <span class="hamburger-menu__bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="header-sp">
+      <div class="header-sp__inner">
+        <ul class="header-sp__nav-list">
+          <li class="header-sp__nav-item"><a href="overview.html" class="header-sp__nav-link">協会概要</a></li>
+          <li class="header-sp__nav-item"><a href="about.html" class="header-sp__nav-link">不動産鑑定士とは</a></li>
+          <li class="header-sp__nav-item header-sp__nav-item--margin"><a href="license.html"
+              class="header-sp__nav-link">不動産鑑定士になるには</a></li>
+          <li class="header-sp__nav-item"><a href="pamphlet.html" class="header-sp__nav-link">パンフレット不動産鑑定士やまぐち</a></li>
+          <li class="header-sp__nav-item"><a href="delivery.html" class="header-sp__nav-link">出前講座</a></li>
+          <li class="header-sp__nav-item"><a href="session.html" class="header-sp__nav-link">無料相談会</a></li>
+          <li class="header-sp__nav-item"><a href="advice.html" class="header-sp__nav-link">不動産鑑定無料相談所</a></li>
+          <li class="header-sp__nav-item"><a href="data.html" class="header-sp__nav-link">地価公示・地価調査</a></li>
+          <li class="header-sp__nav-item"><a href="directory.html" class="header-sp__nav-link">地価要覧</a></li>
+          <li class="header-sp__nav-item"><a href="market.html" class="header-sp__nav-link">山口県不動産市況ＤＩ調査</a></li>
+          <li class="header-sp__nav-item header-sp__nav-item--margin"><a href="member.html"
+              class="header-sp__nav-link">会員紹介</a></li>
+          <li class="header-sp__nav-item"><a href="information.html" class="header-sp__nav-link">お知らせ一覧</a></li>
+          <li class="header-sp__nav-item"><a href="contact.html" class="header-sp__nav-link">お問い合わせ</a></li>
+          <li class="header-sp__nav-item"><a href="access.html" class="header-sp__nav-link">アクセス</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <div class="main sub-page">
+
+    <h1 class="sub-page__ttl">個人情報保護方針
+
+      <div class="sub-page__img sub-page__img--opacity">
+        <img src="assets/img/subpage/sub-page-img.png">
+      </div>
+    </h1>
+    <section class="sub-page__section">
+
+      <div class="sub-page__section-inner">
+
+        <!-- 元サイトから -->
+        <h2 class="sub-page__h2">公益社団法人山口県不動産鑑定士協会の「個人情報保護方針」</h2>
+        <ol class="sub-page__ol">
+          <li>
+            公益社団法人山口県不動産鑑定士協会（以下、「協会」という。）は、「個人情報の保護に関する法律」(以下、「法」という。)及び国土交通省所管における個人情報保護に関するガイドライン」等の個人情報保護に関する法令並びに公益社団法人日本不動産鑑定士協会連合会作成の「不動産の鑑定評価業務に係る個人情報保護に関する方針（以下、「本会ガイドライン」という。）を遵守します。
+          </li>
+          <li> 協会は、本会ガイドラインに沿った内部規程等作成、整備し、個人情報を収集・利用及び提供を行う場合には、これを遵守し、厳正な管理に努めます。</li>
+          <li>
+            収集した個人情報は、安全に運営管理するよう鋭意努力し、漏洩、滅失、毀損等への危険防止に対する合理的且つ適切に管理を行い、管理者をおいて個人情報セキュリティー実施基準を設けて職員等への周知徹底を図ります。また、個人情報保護法に基づく公表事項（下記に掲載。）に定める利用目的の範囲内のみで利用します。
+          </li>
+          <li>取り扱う個人データの漏洩等の防止、その他安全管理の為、【1】 職員等の責任と権限を明確に定め、規程・手順書及び取扱台帳を運用整備し、実施状況を確認する。(組織的な安全管理組織)　【2】
+            職員に対する教育・啓発を実施する。(人的安全管理措置) 【3】 物理的安全管理措置を講じる。</li>
+        </ol>
+        <br>
+        <br><b>
+          <p>「個人情報の保護に関する法律」に基づく公表事項</p>
+        </b>
+        <p> 公益社団法人山口県不動産鑑定士協会（以下「協会」という。）は、「個人情報の保護に関する法律」（以下、「法」という。）に基づき、以下の事項を公表いたします。</p>
+        <br>
+        <p>１．個人情報の利用目的等<br>
+          （1）書面で個人情報を直接取得する場合以外の方法で、個人情報を取得する場合の利用目的（法第18条第1項関係）</p>
+
+
+
+        <div class="sub-page__table-wrap">
+          <table class="sub-page__table">
+            <tr>
+              <td>
+                <div align="center"></div>
+              </td>
+              <td>
+                <div align="center">個人情報の項目（個人会員）</div>
+              </td>
+              <td>
+                <div align="center">利用目的</div>
+              </td>
+              <td>
+                <div align="center">備考</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div align="center">1</div>
+              </td>
+              <td>氏名</td>
+              <td>会員管理 </td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>
+                <div align="center">2</div>
+              </td>
+              <td>生年月日</td>
+              <td>会員管理</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>
+                <div align="center">3</div>
+              </td>
+              <td>性別</td>
+              <td>会員管理</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>
+                <div align="center">4</div>
+              </td>
+              <td>自宅住所</td>
+              <td>会員管理</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>
+                <div align="center">5</div>
+              </td>
+              <td>自宅電話番号</td>
+              <td>会員管理</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>
+                <div align="center">6</div>
+              </td>
+              <td>自宅ＦＡＸ番号</td>
+              <td>会員管理</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>
+                <div align="center">7</div>
+              </td>
+              <td>E－mailアドレス</td>
+              <td>会員管理</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>
+                <div align="center">8</div>
+              </td>
+              <td>勤務先代表者</td>
+              <td>会員管理</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>
+                <div align="center">9</div>
+              </td>
+              <td>勤務先名称</td>
+              <td>会員管理</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>
+                <div align="center">10</div>
+              </td>
+              <td>勤務先所在地</td>
+              <td>会員管理</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>
+                <div align="center">11</div>
+              </td>
+              <td>勤務先電話番号</td>
+              <td>会員管理</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>
+                <div align="center">12</div>
+              </td>
+              <td>勤務先ＦＡＸ番号</td>
+              <td>会員管理</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>
+                <div align="center">13</div>
+              </td>
+              <td>別に勤務先を有する場合のみ<br>
+                【1】名称　【2】所在地　【3】電話番号　【4】ＦＡＸ番号</td>
+              <td>会員管理</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>
+                <div align="center">14</div>
+              </td>
+              <td>入会年月日</td>
+              <td>会員管理</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>
+                <div align="center">15</div>
+              </td>
+              <td>退会年月日（退会者のみ）</td>
+              <td>会員管理</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>
+                <div align="center">16</div>
+              </td>
+              <td>懲罰（懲戒処分を受けた場合のみ）</td>
+              <td>会員管理</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>
+                <div align="center">17</div>
+              </td>
+              <td>地価公示評価員年度</td>
+              <td>評価員管理</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>
+                <div align="center">18</div>
+              </td>
+              <td>地価調査評価員年度</td>
+              <td>評価員管理</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>
+                <div align="center">19</div>
+              </td>
+              <td>担当会員の固評業務評価料振込先<br>
+                【1】銀行名称　【2】本店又は支店の名称　【3】預金種別　【4】口座番号</td>
+              <td>鑑定評価料等の支払い </td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>
+                <div align="center">20</div>
+              </td>
+              <td>国土交通省資格登録番号（士・士補）</td>
+              <td>会員管理</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>
+                <div align="center">21</div>
+              </td>
+              <td>国土交通省資格登録月日（士・士補）</td>
+              <td>会員管理</td>
+              <td>&nbsp;</td>
+            </tr>
+          </table>
+        </div>
+
+        <p>注：１、9～12、及び20の情報は顧客の依頼に応じて提供し、インタ－ネット(第三者提供)及び鑑定やまぐち発行について、同意を得て掲載しております。→下記（2）参照。</p>
+        <br>
+
+
+        <div class="sub-page__table-wrap">
+          <table class="sub-page__table" width="98%" border="0" align="center" cellpadding="3" cellspacing="1">
+            <tr>
+              <td>
+                <div align="center"></div>
+              </td>
+              <td>
+                <div align="center">個人情報の項目（事務局職員）</div>
+              </td>
+              <td>
+                <div align="center">利用目的</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div align="center">1</div>
+              </td>
+              <td>氏名</td>
+              <td>職員管理</td>
+            </tr>
+            <tr>
+              <td>
+                <div align="center">2</div>
+              </td>
+              <td>住所</td>
+              <td>職員管理</td>
+            </tr>
+            <tr>
+              <td>
+                <div align="center">3</div>
+              </td>
+              <td>電話番号</td>
+              <td>職員管理</td>
+            </tr>
+            <tr>
+              <td>
+                <div align="center">4</div>
+              </td>
+              <td>緊急連絡先</td>
+              <td>職員管理</td>
+            </tr>
+            <tr>
+              <td>
+                <div align="center">5</div>
+              </td>
+              <td>給与振込先<br>
+                【1】銀行名称　【2】本店又は支店の名称　【3】預金種別　【4】口座番号</td>
+              <td>職員管理</td>
+            </tr>
+            <tr>
+              <td>
+                <div align="center">6</div>
+              </td>
+              <td>源泉徴収の実施</td>
+              <td>職員管理</td>
+            </tr>
+          </table>
+        </div>
+
+        <br>
+
+        <div class="sub-page__table-wrap">
+          <table class="sub-page__table" width="98%" border="0" align="center" cellpadding="3" cellspacing="1">
+            <tr>
+              <td>
+                <div align="center"></div>
+              </td>
+              <td>
+                <div align="center">個人情報の項目（非会員）</div>
+              </td>
+              <td>
+                <div align="center">利用目的</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div align="center">1</div>
+              </td>
+              <td>取引事例 （対象不動産の所在、価額等）</td>
+              <td>地価公示、都道府県地価調査並びに国・都道府県及び政令指定都市が行う地価動向調査等をはじめとする鑑定評価等業務</td>
+            </tr>
+            <tr>
+              <td>
+                <div align="center">2</div>
+              </td>
+              <td>固評及びその他の会議、研修会.懇親会等の参加者
+                （氏名・送付先名称、役職、所在地・TEL等）</td>
+              <td>案内状、挨拶状の発送</td>
+            </tr>
+            <tr>
+              <td>
+                <div align="center">3</div>
+              </td>
+              <td>会報誌等の発送先
+                （氏名・送付先名称、所在地・TEL等）</td>
+              <td>会報誌等の発送</td>
+            </tr>
+            <tr>
+              <td>
+                <div align="center">4</div>
+              </td>
+              <td>外部講師の経歴
+                （氏名・勤務先等）</td>
+              <td>研修会受講者への講師経歴の紹介</td>
+            </tr>
+            <tr>
+              <td>
+                <div align="center">5</div>
+              </td>
+              <td>最高商業地・大規模工業地・商業地等の調査研究の必要資料（対象不動産の所在、所有者の氏名等）</td>
+              <td>調査研究</td>
+            </tr>
+          </table>
+        </div>
+
+
+        <p>注： 2の情報は会議等の案内状の発送に利用しているほか、参加者名簿を出席者に配付（第三者提供）しております。</p>
+
+        <p>（2）本人の求めに応じて第三者提供を停止することとしている場合の公表事項（法第23条第2項関係）<br>
+          現在のところありません。</p>
+        <br>
+        <div class="sub-page__table-wrap">
+          <table class="sub-page__table">
+            <tr>
+              <td>
+                <div align="center"></div>
+              </td>
+              <td>
+                <div align="center">個人情報の項目（非会員）</div>
+              </td>
+              <td>
+                <div align="center">第三者提供の方法</div>
+              </td>
+              <td>
+                <div align="center">備考</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div align="center">1</div>
+              </td>
+              <td>固評等の会議、研修会、懇親会等の参加者</td>
+              <td>参加者名簿</td>
+              <td>オプトアウト</td>
+            </tr>
+          </table>
+        </div>
+
+        <p>注：1の「備考」欄で「オプトアウト」としているのは、招待者名簿を法第23条第2項に基づき第三者提供を行う際、招待者本人から名簿への掲載中止が求められた場合には、掲載を中止することを前提としていることを指しております。
+        </p>
+        <br>
+        <div class="sub-page__table-wrap">
+          <table width="100%" border="0" cellspacing="0" cellpadding="2">
+            <tr>
+              <td colspan="2">
+                <p>（3）共同利用に関する公表事項（法第23条第4項関係）</p>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">協会は、取得する取引事例等に関する個人データを下記により共同利用します。</td>
+            </tr>
+            <tr>
+              <td valign="top">
+                <div align="right" style="white-space: nowrap;">【1】</div>
+              </td>
+              <td width="95%">共同して利用する者の範囲：公益社団法人日本不動産鑑定士協会連合会並びにその会員、又は都道府県不動産鑑定士協会に所属する会員</td>
+            </tr>
+            <tr>
+              <td valign="top">
+                <div align="right">【2】</div>
+              </td>
+              <td>共同して利用される個人データの項目：物件所在地、価額、面積、取引当事者の氏名、面する道路の幅員などの個別的な、あるいは公法上の制限、所在する地域の特徴などの地域的な価格形成要因のデータ項目</td>
+            </tr>
+            <tr>
+              <td valign="top">
+                <div align="right">【3】</div>
+              </td>
+              <td>利用目的：地価公示、地価調査ほかの公的評価及び不動産の鑑定評価に関する法律第2条の2に定められた鑑定評価等業務</td>
+            </tr>
+            <tr>
+              <td valign="top">
+                <div align="right">【4】</div>
+              </td>
+              <td>管理責任者：公益社団法人山口県不動産鑑定士協会</td>
+            </tr>
+          </table>
+        </div>
+
+        <br>
+        <br>
+        <div class="sub-page__table-wrap">
+          <table width="100%" border="0" cellspacing="0" cellpadding="2">
+            <tr>
+              <td colspan="2" valign="top">２．保有個人データに関して、本人の知り得る状態に置くべき事項（法第24条第1項関係）<br>
+                　　冒頭部分及び上記１の（1）の各表参照</td>
+            </tr>
+          </table>
+        </div>
+
+        <br>
+        <br>
+        <div class="sub-page__table-wrap">
+          <table width="100%" border="0" cellspacing="0" cellpadding="2">
+            <tr>
+              <td colspan="2">
+                <p>３．開示等の求めに応じる手続等に関する事項（法第29条関係）</p>
+              </td>
+            </tr>
+            <tr>
+              <td valign="top">
+                <div align="right" style="white-space: nowrap;">（1）</div>
+              </td>
+              <td width="95%">開示の求めの対象となる保有個人データの事項<br>
+                開示の求めの対象となる保有個人データの事項については、上記１の（1）の各表参照。</td>
+            </tr>
+            <tr>
+              <td valign="top">
+                <div align="right">（2）</div>
+              </td>
+              <td>開示等の求めの申し出先<br>
+                開示等の求めは下記宛、所定の申請書に必要書類（（3）及び（4）参照）及び手数料（（5）参照）を添え、郵送により申請ください。その際、封筒に朱書きで、「開示請求書類在中」とお書き添え下さい。</td>
+            </tr>
+            <tr>
+              <td valign="top">&nbsp;</td>
+              <td>　〒754－0021<br>
+                　　山口県小郡町黄金町１１番４号　富士ハイツ１０１号<br>
+                　　公益社団法人山口県不動産鑑定士協会　事務局</td>
+            </tr>
+            <tr>
+              <td valign="top">
+                <div align="right">（3）</div>
+              </td>
+              <td>開示等の求めに際して提出すべき書面<br>
+                開示等の申請を行う場合は、予め、84円切手及び住所氏名を記入した封筒を同封のうえ、上記申し出先まで必要な申請書様式を請求して下さい。折り返し申請書様式をお送りします。<br>
+                【1】　申請書様式<br>
+                　1.　保有個人データ開示申請書（開示等様式１）　<br>
+                　2.　保有個人データ訂正等申請書（開示等様式２）<br>
+                　3.　保有個人データ利用停止等申請書（開示等様式３）<br>
+                　4.　保有個人データ第三者提供停止申請書（開示等様式４）<br>
+                【2】　本人確認のための書類<br>
+                　1.　会員証、運転免許証、旅券、健康保険証、外国人登録証明書の写しの何れか１つ以上<br>
+                　2.　印鑑証明書（開示等の求めの日より3ヶ月以内のもの）</td>
+            </tr>
+            <tr>
+              <td valign="top">
+                <div align="right">（4）</div>
+              </td>
+              <td>代理人による開示等の求め<br>
+                「開示等の求め」をする者が未成年者又は成年被後見人の法定代理人若しくは、開示等の求めをすることにつき本人が委任した代理人である場合は、上記（3）【2】の書類に加えて下記の書類【1】又は【2】を同封下さい。<br>
+                【1】　法定代理人の場合<br>
+                　・法定代理権があることを確認するための書類（戸籍謄本等）<br>
+                　・法定代理人本人であることを確認するための書類<br>
+                　　　1.運転免許証、旅券、健康保険証、外国人登録証明書、の写しの何れか１つ以上<br>
+                　　　2.印鑑証明書（開示等の求めの日より3ヶ月以内のもの） <br>
+                【2】　委任による代理人の場合<br>
+                　・委任状（本人の実印を押印したもの）<br>
+                　・代理人本人であることを確認するための書類<br>
+                　　　1.運転免許証、旅券、健康保険証、外国人登録証明書の写しの何れか１つ以上<br>
+                　　　2.代理人の印鑑証明書（開示等の求めの日より3ヶ月以内のもの） </td>
+            </tr>
+            <tr>
+              <td valign="top">
+                <div align="right">（5）</div>
+              </td>
+              <td>開示の求めに応じるための手数料及びその徴収方法<br>
+                １回の申請毎に、550円必要。550円分の郵便切手を申請書類に同封して下さい。</td>
+            </tr>
+            <tr>
+              <td valign="top">
+                <div align="right">（6）</div>
+              </td>
+              <td>開示等の求めに対する回答方法<br>
+                申請者の申請者記載住所宛に、書面によって回答します。</td>
+            </tr>
+            <tr>
+              <td valign="top">
+                <div align="right">（7）</div>
+              </td>
+              <td>開示等の求めに関して取得した個人情報の利用目的及び保存期間<br>
+                開示等の求めに伴い取得した個人情報は、開示等の求めに必要な範囲でのみ取り扱うものとします。提出頂いた書類は、開示等の求めに対する回答が終了した日より２年間保存し、その後廃棄します。</td>
+            </tr>
+            <tr>
+              <td valign="top">
+                <div align="right">（8）</div>
+              </td>
+              <td>不開示事由について<br>
+                次に定める場合は、不開示とさせていただきます。不開示を決定した場合、その旨、理由を付記して通知します。また、不開示の場合についても所定の手数料をいただきます。<br>
+                　・開示の求めの対象が、法第2条で定義する保有個人データに該当しない場合<br>
+                　・本人又は第三者の生命、身体、財産その他の権利利益を害するおそれがある場合<br>
+                　・協会の業務の適正な実施に著しい支障を及ぼすおそれがある場合<br>
+                　・他の法令に違反することとなる場合<br>
+                　・保有個人データに該当する本人の氏名その他個人情報の存在が認められない場合<br>
+                　・代理人による申請に際して、代理権が確認できない場合<br>
+                　・所定の申請書類に明らかな虚偽がある場合</td>
+            </tr>
+            <tr>
+              <td valign="top">&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td colspan="2" valign="top">４．苦情及び相談の受付に関する事項（法第31条関係）</td>
+            </tr>
+            <tr>
+              <td valign="top">&nbsp;</td>
+              <td valign="top">協会の個人情報の取り扱いに関する苦情又は相談については、上記３の（2）に記載の開示等の求めの申し出先まで、【1】電話、【2】FAX又は、【3】郵送でお申し出下さい。</td>
+            </tr>
+            <tr>
+              <td valign="top">&nbsp;</td>
+              <td valign="top">※ 認定個人情報保護団体の名称及び苦情の申し出先<br>
+                　　現在、協会の所属する認定個人情報保護団体はありません。</td>
+            </tr>
+          </table>
+        </div>
+
+
+        <!-- 元サイトから -->
+
+
+      </div>
+
+
+    </section>
+
+
+
+
+
+
+  </div>
+  <!--main end-->
+
+
+  <footer class="footer">
+
+
+    <div class="footer__top">
+      <div class="footer__top-inner">
+        <a href="#" class="footer__ttl"><span>公益社団法人</span>山口県不動産鑑定士協会</a>
+        <div class="footer__address">
+          〒754-0021<br>
+          山口市小郡黄金町11-4　富士ハイツ1F
+        </div>
+        <div class="footer__tel-wrap">
+          <a href="tel:083-973-1051" class="footer__tel">TEL083-973-1051</a>
+          <p class="footer__fax">FAX083-973-1048</p>
+
+        </div>
+
+        <div class="footer__link-wrap">
+          <a href="link.html" class="footer__link-item">› リンク一覧</a>
+          <a href="privacy.html" class="footer__link-item">　› 個人情報保護方針</a>
+
+        </div>
+        <a href="#" class="footer__top-btn top-to-js">
+          <img src="assets/img/top/top-btn.png">
+        </a>
+
+      </div>
+
+
+    </div>
+    <div class="footer__bottom">
+      Copyright ©　公益社団法人 山口県不動産鑑定士協会 All Rights Reserved.
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="assets/js/main.js">
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,368 @@
+<!-- <?php
+  $des="サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。"
+  ; ?> -->
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="email=no,telephone=no,address=no">
+  <!--!!!!!!!!!!!!!!!!!WPでは不要!!!!!!!!!!!!!!!!!!!!!-->
+  <title>地価公示・地価調査</title>
+  <meta name="description" content="<?php echo $des; ?>">
+  <!--!!!!!!!!!!!!!!!!!公開時、allに変更する!!!!!!!!!!!!!!!!!!!!!-->
+  <meta name="robots" content="none">
+  <meta property="og:type" content="website">
+  <meta property="og:title"
+    content="<?php wp_title( '-', true, 'right' ); ?><?php bloginfo( 'name' ); ?> | <?php echo $des; ?>">
+  <meta property="og:description" content="<?php echo $des; ?>">
+  <meta property="og:site_name"
+    content="<?php wp_title( '-', true, 'right' ); ?><?php bloginfo( 'name' ); ?> | <?php echo $des; ?>">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>assets/img/fb.jpg">
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title"
+    content="<?php wp_title( '-', true, 'right' ); ?><?php bloginfo( 'name' ); ?> | <?php echo $des; ?>">
+  <meta name="twitter:description" content="<?php echo $des; ?>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+  <link rel="stylesheet" href="assets/css/html5reset-1.6.1.css">
+  <link rel="stylesheet" href="assets/css/style.css?20230220">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body class="wrap">
+
+  <header class="header">
+    <div class="header__inner">
+      <h1 class="header__ttl-wrap header__item"><a href="index.html" class="header__ttl"><img
+            src="assets/img/top/logo.png" alt=""></a>
+      </h1>
+      <nav class="header__menu-wrap header__item">
+        <div class="header__menu-inner">
+          <a href="overview.html" class="header__menu">協会概要</a>
+          <a href="about.html" class="header__menu">不動産鑑定士とは</a>
+          <a href="license.html" class="header__menu">不動産鑑定士になるには</a>
+          <a href="member.html" class="header__menu">会員紹介</a>
+          <a href="contact.html" class="header__menu">お問い合わせ</a>
+          <a href="access.html" class="header__menu">アクセス</a>
+        </div>
+      </nav>
+      <div class="header__btn-wrap header__item">
+        <button class="hamburger-menu" id="js-hamburger-menu">
+          <span class="hamburger-menu__bar"></span>
+          <span class="hamburger-menu__bar"></span>
+          <span class="hamburger-menu__bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="header-sp">
+      <div class="header-sp__inner">
+        <ul class="header-sp__nav-list">
+          <li class="header-sp__nav-item"><a href="overview.html" class="header-sp__nav-link">協会概要</a></li>
+          <li class="header-sp__nav-item"><a href="about.html" class="header-sp__nav-link">不動産鑑定士とは</a></li>
+          <li class="header-sp__nav-item header-sp__nav-item--margin"><a href="license.html"
+              class="header-sp__nav-link">不動産鑑定士になるには</a></li>
+          <li class="header-sp__nav-item"><a href="pamphlet.html" class="header-sp__nav-link">パンフレット不動産鑑定士やまぐち</a></li>
+          <li class="header-sp__nav-item"><a href="delivery.html" class="header-sp__nav-link">出前講座</a></li>
+          <li class="header-sp__nav-item"><a href="session.html" class="header-sp__nav-link">無料相談会</a></li>
+          <li class="header-sp__nav-item"><a href="advice.html" class="header-sp__nav-link">不動産鑑定無料相談所</a></li>
+          <li class="header-sp__nav-item"><a href="data.html" class="header-sp__nav-link">地価公示・地価調査</a></li>
+          <li class="header-sp__nav-item"><a href="directory.html" class="header-sp__nav-link">地価要覧</a></li>
+          <li class="header-sp__nav-item"><a href="market.html" class="header-sp__nav-link">山口県不動産市況ＤＩ調査</a></li>
+          <li class="header-sp__nav-item header-sp__nav-item--margin"><a href="member.html"
+              class="header-sp__nav-link">会員紹介</a></li>
+          <li class="header-sp__nav-item"><a href="information.html" class="header-sp__nav-link">お知らせ一覧</a></li>
+          <li class="header-sp__nav-item"><a href="contact.html" class="header-sp__nav-link">お問い合わせ</a></li>
+          <li class="header-sp__nav-item"><a href="access.html" class="header-sp__nav-link">アクセス</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <div class="main page-data sub-page">
+
+    <h1 class="sub-page__ttl">地価公示・地価調査
+
+      <div class="sub-page__img">
+        <img src="assets/img/subpage/sub-page-img.png">
+      </div>
+    </h1>
+    <section class="sub-page__section">
+      <p class="sub-page__lead sub-page__lead--white">一般の土地取引の基準や目安となるほか、<br class="pc-block">
+        道路や公園等の公共用地の取得価格を算定する際にも活用されています。</p>
+      <div class="sub-page__white-content">
+        <div class="sub-page__white-content-inner">
+          <h2 class="page-data__h2">地価公示<span>（対前年変動率%）</span></h2>
+          <div class="page-data__table-wrap">
+            <table class="page-data__table">
+              <thead>
+                <tr>
+                  <th>年</th>
+                  <th>H27</th>
+                  <th>H28</th>
+                  <th>H29</th>
+                  <th>H30</th>
+                  <th>R1</th>
+                  <th>R2</th>
+                  <th>R3</th>
+                  <th>R4</th>
+                  <th>R5</th>
+                  <th>R6</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="page-data__td-green">住宅地<br>県平均</td>
+                  <td>-1.9</td>
+                  <td>-1.3</td>
+                  <td>-0.8</td>
+                  <td>-0.4</td>
+                  <td>0.1</td>
+                  <td>0.3</td>
+                  <td>-0.1</td>
+                  <td>0.2</td>
+                  <td>0.4</td>
+                  <td>0.5</td>
+                </tr>
+                <tr>
+                  <td class="page-data__td-green">商業地<br>県平均</td>
+                  <td>-2.8</td>
+                  <td>-1.8</td>
+                  <td>-1.1</td>
+                  <td>-0.6</td>
+                  <td>-0.3</td>
+                  <td>-0.2</td>
+                  <td>-0.4</td>
+                  <td>-0.3</td>
+                  <td>0.0</td>
+                  <td>0.3</td>
+                </tr>
+                <tr>
+                  <td class="page-data__td-green">住宅地<br>全国平均</td>
+                  <td>-0.4</td>
+                  <td>-0.2</td>
+                  <td>0.0</td>
+                  <td>0.3</td>
+                  <td>0.6</td>
+                  <td>0.8</td>
+                  <td>-0.4</td>
+                  <td>0.5</td>
+                  <td>1.4</td>
+                  <td>2.0</td>
+                </tr>
+                <tr>
+                  <td class="page-data__td-green">商業地<br>全国平均</td>
+                  <td>0.0</td>
+                  <td>0.9</td>
+                  <td>1.4</td>
+                  <td>1.9</td>
+                  <td>2.8</td>
+                  <td>3.1</td>
+                  <td>-0.8</td>
+                  <td>0.4</td>
+                  <td>1.8</td>
+                  <td>3.1</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="page-data__box">
+            <div class="page-data__box-left">
+              <img src="assets/img/subpage/data-graph01-2024.png" alt="地価公示グラフ">
+            </div>
+            <div class="page-data__box-right">
+              <p class="page-data__box-text">県内の平均変動率について、住宅地は3年連続で上昇した。商業地は前年の横ばいから上昇に転じた。</p>
+              <p class="page-data__box-text">住宅地では10市町が上昇した一方で6市町が下落した。</p>
+              <p class="page-data__box-text">商業地では9市町が上昇した一方で7市町で下落した。</p>
+              <p class="page-data__box-text">全国平均では、全用途平均・住宅地・商業地のいずれも3年連続で上昇し、山口県の平均変動率の全国順位は住宅地が22位、商業地が24位であった。</p>
+
+            </div>
+
+          </div>
+          <p class="page-data__text">令和６年地価公示については<a
+              href="https://www.mlit.go.jp/report/press/tochi_fudousan_kensetsugyo04_hh_000001_00042.html"
+              class="sub-page__link" target="_blank">こちら</a><br class="sp-block">（国土交通省ホームページ）</p>
+          <p class="page-data__text">令和６年地価公示（山口県分）については<a
+              href="https://www.pref.yamaguchi.lg.jp/soshiki/19/175506.html" class="sub-page__link"
+              target="_blank">こちら</a><br class="sp-block">（山口県ホームページ）</p>
+
+
+
+
+
+        </div>
+
+        <div class="sub-page__white-content-inner">
+          <h2 class="page-data__h2">地価調査<span>（対前年変動率%）</span></h2>
+          <div class="page-data__table-wrap">
+            <table class="page-data__table">
+              <thead>
+                <tr>
+                  <th>年</th>
+                  <th>H26</th>
+                  <th>H27</th>
+                  <th>H28</th>
+                  <th>H29</th>
+                  <th>H30</th>
+                  <th>R1</th>
+                  <th>R2</th>
+                  <th>R3</th>
+                  <th>R4</th>
+                  <th>R5</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="page-data__td-green">住宅地<br>県平均</td>
+                  <td>-3.0</td>
+                  <td>-2.5</td>
+                  <td>-1.9</td>
+                  <td>-1.3</td>
+                  <td>-0.9</td>
+                  <td>-0.6</td>
+                  <td>-0.7</td>
+                  <td>-0.6</td>
+                  <td>-0.5</td>
+                  <td>-0.3</td>
+                </tr>
+                <tr>
+                  <td class="page-data__td-green">商業地<br>県平均</td>
+                  <td>-3.8</td>
+                  <td>-2.9</td>
+                  <td>-2.1</td>
+                  <td>-1.5</td>
+                  <td>-0.9</td>
+                  <td>-0.7</td>
+                  <td>-0.9</td>
+                  <td>-0.8</td>
+                  <td>-0.6</td>
+                  <td>-0.3</td>
+                </tr>
+                <tr>
+                  <td class="page-data__td-green">住宅地<br>全国平均</td>
+                  <td>-1.2</td>
+                  <td>-1.0</td>
+                  <td>-0.8</td>
+                  <td>-0.6</td>
+                  <td>-0.3</td>
+                  <td>-0.1</td>
+                  <td>-0.7</td>
+                  <td>-0.5</td>
+                  <td>0.1</td>
+                  <td>0.7</td>
+                </tr>
+                <tr>
+                  <td class="page-data__td-green">商業地<br>全国平均</td>
+                  <td>-1.1</td>
+                  <td>-0.5</td>
+                  <td>0.0</td>
+                  <td>0.5</td>
+                  <td>1.1</td>
+                  <td>1.7</td>
+                  <td>-0.3</td>
+                  <td>-0.5</td>
+                  <td>0.5</td>
+                  <td>1.5</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="page-data__box">
+            <div class="page-data__box-left">
+              <img src="assets/img/subpage/data-graph02-2024.png" alt="地価調査グラフ">
+            </div>
+            <div class="page-data__box-right">
+              <p class="page-data__box-text">県内の平均変動率について、住宅地にあっては平成11年以降25年連続、商業地にあっては平成6年以降30年連続の下落であるが、下落率が縮小した。</p>
+              <p class="page-data__box-text">住宅地では、下松市が6年連続、和木町が5年連続、宇部市が3年連続で上昇した。</p>
+              <p class="page-data__box-text">商業地では、防府市が4年連続、山口市が3年連続、下松市が2年連続で上昇した。</p>
+              <p class="page-data__box-text">全国平均については、住宅地・商業地いずれも前年と同じく上昇基調が続いた。山口県の平均変動率の全国順位は住宅地で22位、商業地で27位であった。</p>
+
+            </div>
+
+          </div>
+          <p class="page-data__text">都道府県地価調査については<a
+              href="https://www.mlit.go.jp/totikensangyo/totikensangyo_fr4_000044.html" class="sub-page__link"
+              target="_blank">こちら</a><br class="sp-block">（国土交通省ホームページ）</p>
+          <p class="page-data__text">山口県地価調査については<a href="https://www.pref.yamaguchi.lg.jp/soshiki/19/167822.html"
+              class="sub-page__link" target="_blank">こちら</a><br class="sp-block">（山口県ホームページ）</p>
+
+
+
+
+
+        </div>
+
+        <div class="sub-page__white-content-inner">
+          <h2 class="page-data__h2">路線価図</h2>
+          <p class="page-data__text">路線価図等については<a href="https://www.rosenka.nta.go.jp/" class="sub-page__link"
+              target="_blank">こちら</a><br class="sp-block">（国税庁ホームページ）</p>
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+
+
+
+
+  </div>
+  <!--main end-->
+
+
+  <footer class="footer">
+
+
+    <div class="footer__top">
+      <div class="footer__top-inner">
+        <a href="#" class="footer__ttl"><span>公益社団法人</span>山口県不動産鑑定士協会</a>
+        <div class="footer__address">
+          〒754-0021<br>
+          山口市小郡黄金町11-4　富士ハイツ1F
+        </div>
+        <div class="footer__tel-wrap">
+          <a href="tel:083-973-1051" class="footer__tel">TEL083-973-1051</a>
+          <p class="footer__fax">FAX083-973-1048</p>
+
+        </div>
+
+        <div class="footer__link-wrap">
+          <a href="link.html" class="footer__link-item">› リンク一覧</a>
+          <a href="privacy.html" class="footer__link-item">　› 個人情報保護方針</a>
+
+        </div>
+        <a href="#" class="footer__top-btn top-to-js">
+          <img src="assets/img/top/top-btn.png">
+        </a>
+
+      </div>
+
+
+    </div>
+    <div class="footer__bottom">
+      Copyright ©　公益社団法人 山口県不動産鑑定士協会 All Rights Reserved.
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="assets/js/main.js">
+  </script>
+</body>
+
+</html>

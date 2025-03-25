@@ -1,0 +1,357 @@
+<!-- <?php
+  $des="サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。"
+  ; ?> -->
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="email=no,telephone=no,address=no">
+  <!--!!!!!!!!!!!!!!!!!WPでは不要!!!!!!!!!!!!!!!!!!!!!-->
+  <title>不動産鑑定士協会</title>
+  <meta name="description" content="<?php echo $des; ?>">
+  <!--!!!!!!!!!!!!!!!!!公開時、allに変更する!!!!!!!!!!!!!!!!!!!!!-->
+  <meta name="robots" content="none">
+  <meta property="og:type" content="website">
+  <meta property="og:title"
+    content="<?php wp_title( '-', true, 'right' ); ?><?php bloginfo( 'name' ); ?> | <?php echo $des; ?>">
+  <meta property="og:description" content="<?php echo $des; ?>">
+  <meta property="og:site_name"
+    content="<?php wp_title( '-', true, 'right' ); ?><?php bloginfo( 'name' ); ?> | <?php echo $des; ?>">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>assets/img/fb.jpg">
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title"
+    content="<?php wp_title( '-', true, 'right' ); ?><?php bloginfo( 'name' ); ?> | <?php echo $des; ?>">
+  <meta name="twitter:description" content="<?php echo $des; ?>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+  <link rel="stylesheet" href="assets/css/html5reset-1.6.1.css">
+  <link rel="stylesheet" href="assets/css/style.css?20230220">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body class="wrap">
+
+  <header class="header">
+    <div class="header__inner">
+      <h1 class="header__ttl-wrap header__item"><a href="index.html" class="header__ttl"><img
+            src="assets/img/top/logo.png" alt=""></a>
+      </h1>
+      <nav class="header__menu-wrap header__item">
+        <div class="header__menu-inner">
+          <a href="overview.html" class="header__menu">協会概要</a>
+          <a href="about.html" class="header__menu">不動産鑑定士とは</a>
+          <a href="license.html" class="header__menu">不動産鑑定士になるには</a>
+          <a href="member.html" class="header__menu">会員紹介</a>
+          <a href="contact.html" class="header__menu">お問い合わせ</a>
+          <a href="access.html" class="header__menu">アクセス</a>
+        </div>
+      </nav>
+      <div class="header__btn-wrap header__item">
+        <button class="hamburger-menu" id="js-hamburger-menu">
+          <span class="hamburger-menu__bar"></span>
+          <span class="hamburger-menu__bar"></span>
+          <span class="hamburger-menu__bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="header-sp">
+      <div class="header-sp__inner">
+        <ul class="header-sp__nav-list">
+          <li class="header-sp__nav-item"><a href="overview.html" class="header-sp__nav-link">協会概要</a></li>
+          <li class="header-sp__nav-item"><a href="about.html" class="header-sp__nav-link">不動産鑑定士とは</a></li>
+          <li class="header-sp__nav-item header-sp__nav-item--margin"><a href="license.html"
+              class="header-sp__nav-link">不動産鑑定士になるには</a></li>
+          <li class="header-sp__nav-item"><a href="pamphlet.html" class="header-sp__nav-link">パンフレット不動産鑑定士やまぐち</a></li>
+          <li class="header-sp__nav-item"><a href="delivery.html" class="header-sp__nav-link">出前講座</a></li>
+          <li class="header-sp__nav-item"><a href="session.html" class="header-sp__nav-link">無料相談会</a></li>
+          <li class="header-sp__nav-item"><a href="advice.html" class="header-sp__nav-link">不動産鑑定無料相談所</a></li>
+          <li class="header-sp__nav-item"><a href="data.html" class="header-sp__nav-link">地価公示・地価調査</a></li>
+          <li class="header-sp__nav-item"><a href="directory.html" class="header-sp__nav-link">地価要覧</a></li>
+          <li class="header-sp__nav-item"><a href="market.html" class="header-sp__nav-link">山口県不動産市況ＤＩ調査</a></li>
+          <li class="header-sp__nav-item header-sp__nav-item--margin"><a href="member.html"
+              class="header-sp__nav-link">会員紹介</a></li>
+          <li class="header-sp__nav-item"><a href="information.html" class="header-sp__nav-link">お知らせ一覧</a></li>
+          <li class="header-sp__nav-item"><a href="contact.html" class="header-sp__nav-link">お問い合わせ</a></li>
+          <li class="header-sp__nav-item"><a href="access.html" class="header-sp__nav-link">アクセス</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <div class="main page-top">
+    <section class="main-visual">
+      <div class="main-visual__top main-visual-js">
+        <div class="main-visual__top-img">
+          <img src="assets/img/top/main-viisual01.jpg">
+        </div>
+        <div class="main-visual__top-img">
+          <img src="assets/img/top/main-viisual02.jpg">
+        </div>
+        <div class="main-visual__top-img">
+          <img src="assets/img/top/main-viisual03.jpg">
+        </div>
+      </div>
+      <div class="main-visual__bottom-img">
+        <img src="assets/img/top/main-visual-bottom-img.png">
+      </div>
+    </section>
+
+
+    <section class="top-about main__section-inner">
+      <div class="top-about__inner">
+        <h2 class="top-about__ttl top-style__ttl">不動産鑑定士協会について</h2>
+        <p class="top-about__text">公益社団法人山口県不動産鑑定士協会は、<br class="pc-block">
+          平成8年8月8日に山口県知事の許可を受けて設立されました。</p>
+        <p class="top-about__text">私達は、土地の適正な利用と管理を通じ、地域社会の発展と国民生活の安定向上を図ることを目的とした土地基本法の理念に基づいて、<br class="pc-block">
+          会員の資質を高く保ち、<br class="pc-block">
+          不動産鑑定評価制度を正しく運用し、<br class="pc-block">
+          不動産が安心・安全な取引となるよう導き、<br class="pc-block">
+          県民の生活がより安定したものとなるように、<br class="pc-block">
+          山口県全体が健全でバランスよく発展していくことを目指して活動しています。</p>
+        <div class="top-about__btn btn-style">
+          <a href="overview.html" class="btn-style__btn">詳しく見る</a>
+        </div>
+        <div class="top-about__text-left-img">
+          <img src="assets/img/top/about-text-left.png" alt="">
+        </div>
+        <div class="top-about__text-right-img">
+          <img src="assets/img/top/about-text-right.png" alt="">
+        </div>
+      </div>
+
+      <div class="top-about__left-bg">
+        <img src="assets/img/top/about-left-bg.png" alt="">
+      </div>
+      <div class="top-about__right-bg">
+        <img src="assets/img/top/about-right-bg.png" alt="">
+      </div>
+    </section>
+
+
+
+    <section class="top-info">
+      <div class="top-info__top-img">
+        <img src="assets/img/top/info-top-img.png" alt="">
+      </div>
+
+      <div class="top-info__inner">
+        <h2 class="top-info__ttl top-style__ttl">お知らせ</h2>
+        <div class="top-info__article-wrap">
+          <article class="top-info__article">
+            <date class="top-info__date">2024.01.01</date>
+            <span class="top-info__cat top-info__cat--sodan">相談</span>
+            <a href="single.html" class="top-info__article-ttl-wrap">
+              <h3 class="top-info__article-ttl">不動産鑑定士による無料相談会</h3>
+              <p class="top-info__article-extract">県民が抱える不動産に関する諸問題の解決に向け、相談会を実施します。</p>
+            </a>
+
+          </article>
+          <article class="top-info__article">
+            <date class="top-info__date">2024.01.01</date>
+            <span class="top-info__cat top-info__cat--kaiin">会員</span>
+            <a href="single.html" class="top-info__article-ttl-wrap">
+              <h3 class="top-info__article-ttl">不動産鑑定士による無料相談会</h3>
+              <p class="top-info__article-extract">県民が抱える不動産に関する諸問題の解決に向け、相談会を実施します。</p>
+            </a>
+
+          </article>
+          <article class="top-info__article">
+            <date class="top-info__date">2024.01.01</date>
+            <span class="top-info__cat">相談</span>
+            <a href="single.html" class="top-info__article-ttl-wrap">
+              <h3 class="top-info__article-ttl">不動産鑑定士による無料相談会</h3>
+              <p class="top-info__article-extract">県民が抱える不動産に関する諸問題の解決に向け、相談会を実施します。</p>
+            </a>
+
+          </article>
+          <article class="top-info__article">
+            <date class="top-info__date">2024.01.01</date>
+            <span class="top-info__cat top-info__cat--koza">講座</span>
+            <a href="single.html" class="top-info__article-ttl-wrap">
+              <h3 class="top-info__article-ttl">不動産鑑定士による無料相談会</h3>
+              <p class="top-info__article-extract">県民が抱える不動産に関する諸問題の解決に向け、相談会を実施します。</p>
+            </a>
+
+          </article>
+        </div>
+
+        <div class="top-info__btn btn-style">
+          <a href="information.html" class="btn-style__btn">一覧で見る</a>
+        </div>
+
+
+      </div>
+    </section>
+
+
+    <section class="top-menu main__section-inner">
+      <div class="top-menu__top-img">
+        <img src="assets/img/top/menu-top-img.png" alt="">
+      </div>
+
+      <div class="top-menu__inner">
+        <div class="top-menu__item">
+          <h3 class="top-menu__ttl top-style__ttl">地価公示・地価調査</h3>
+          <p class="top-menu__item-text">一般の土地取引の基準や目安となるほか、道路や公園等の公共
+            用地の取得価格を算定する際にも活用されています。</p>
+          <div class="top-menu__btn btn-style">
+            <a href="data.html" class="btn-style__btn">詳しく見る</a>
+          </div>
+          <div class="top-menu__item-img"><img src="assets/img/top/menu-item-img04.png" alt="">
+          </div>
+        </div>
+        <div class="top-menu__item">
+          <h3 class="top-menu__ttl top-style__ttl">地価要覧</h3>
+          <p class="top-menu__item-text">県内の原則10名程度以上の団体を対象に、<br class="pc-block">最新の山口県内の地価水準とともに、過去の地価水準の推移も
+            掲載しています。</p>
+          <div class="top-menu__btn btn-style">
+            <a href="directory.html" class="btn-style__btn">詳しく見る</a>
+          </div>
+          <div class="top-menu__item-img"><img src="assets/img/top/menu-item-img05.png" alt="">
+          </div>
+        </div>
+        <div class="top-menu__item">
+          <h3 class="top-menu__ttl top-style__ttl">山口県不動産市況ＤＩ調査</h3>
+          <p class="top-menu__item-text">過去半年の不動産市場の推移に関する実感と、この先半年の不
+            動産市場の動向に関する予測についてのアンケート集計です。</p>
+          <div class="top-menu__btn btn-style">
+            <a href="market.html" class="btn-style__btn">詳しく見る</a>
+          </div>
+          <div class="top-menu__item-img"><img src="assets/img/top/menu-item-img04.png" alt="">
+          </div>
+        </div>
+        <div class="top-menu__item">
+          <h3 class="top-menu__ttl top-style__ttl">会員紹介</h3>
+          <p class="top-menu__item-text">公益社団法人山口県不動産鑑定士協会に所属する不動産鑑定
+            士・不動産鑑定士事務所をご紹介いたします。</p>
+          <div class="top-menu__btn btn-style">
+            <a href="member.html" class="btn-style__btn">詳しく見る</a>
+          </div>
+          <div class="top-menu__item-img"><img src="assets/img/top/menu-item-img06.png" alt="">
+          </div>
+        </div>
+        <div class="top-menu__item">
+          <h3 class="top-menu__ttl top-style__ttl">無料相談会</h3>
+          <p class="top-menu__item-text">暮らしの中のありとあらゆる“困った”にさまざまな角度から
+            お答えします。ご相談は無料です。</p>
+          <div class="top-menu__btn btn-style">
+            <a href="session.html" class="btn-style__btn">詳しく見る</a>
+          </div>
+          <div class="top-menu__item-img"><img src="assets/img/top/menu-item-img03.png" alt="">
+          </div>
+        </div>
+        <div class="top-menu__item">
+          <h3 class="top-menu__ttl top-style__ttl">不動産鑑定無料相談所</h3>
+          <p class="top-menu__item-text">不動産鑑定評価に対する正しい認識と制度の普及を図るため、
+            当協会事務局に「不動産鑑定無料相談所」を開設します。</p>
+          <div class="top-menu__btn btn-style">
+            <a href="advice.html" class="btn-style__btn">詳しく見る</a>
+          </div>
+          <div class="top-menu__item-img"><img src="assets/img/top/menu-item-img03.png" alt="">
+          </div>
+        </div>
+        <div class="top-menu__item">
+          <h3 class="top-menu__ttl top-style__ttl">出前講座</h3>
+          <p class="top-menu__item-text">当協会会員が講師として研修会や職場などにお伺いし、不動産
+            に関する各種テーマについて、無料の講座を実施しています。</p>
+          <div class="top-menu__btn btn-style">
+            <a href="delivery.html" class="btn-style__btn">詳しく見る</a>
+          </div>
+          <div class="top-menu__item-img top-menu__item-img--02"><img src="assets/img/top/menu-item-img02.png" alt="">
+          </div>
+        </div>
+        <div class="top-menu__item">
+          <h3 class="top-menu__ttl top-style__ttl"><span>パンフレット</span>不動産鑑定士やまぐち</h3>
+          <p class="top-menu__item-text">当協会の活動をわかりやすくまとめた案内パンフレットです。<br>
+            ぜひご一読ください。</p>
+          <div class="top-menu__btn btn-style">
+            <a href="pamphlet.html" class="btn-style__btn">詳しく見る</a>
+          </div>
+          <div class="top-menu__item-img"><img src="assets/img/top/menu-item-img01.png" alt="">
+          </div>
+        </div>
+
+
+
+      </div>
+
+      <div class="top-menu__left-bg">
+        <img src="assets/img/top/menu-left-bg.png" alt="">
+      </div>
+      <div class="top-menu__right-bg">
+        <img src="assets/img/top/menu-right-bg.png" alt="">
+      </div>
+    </section>
+
+
+    <section class="bnr-section">
+      <div class="bnr-section__inner">
+        <a href="https://www.fudousan-kanteishi.or.jp/" target="_blank" rel="noopener" class="bnr-section__item"><img
+            src="assets/img/top/bnr-section01.png" alt="日本不動産鑑定士協会連合会"></a>
+        <a href="https://www.fudousan-kanteishi.or.jp/cyoutei/" target="_blank" rel="noopener"
+          class="bnr-section__item"><img src="assets/img/top/bnr-section02.png" alt="不動産鑑定士調停センター"></a>
+
+      </div>
+
+    </section>
+
+
+
+
+  </div>
+  <!--main end-->
+
+
+  <footer class="footer">
+
+
+    <div class="footer__top">
+      <div class="footer__top-inner">
+        <a href="#" class="footer__ttl"><span>公益社団法人</span>山口県不動産鑑定士協会</a>
+        <div class="footer__address">
+          〒754-0021<br>
+          山口市小郡黄金町11-4　富士ハイツ1F
+        </div>
+        <div class="footer__tel-wrap">
+          <a href="tel:083-973-1051" class="footer__tel">TEL083-973-1051</a>
+          <p class="footer__fax">FAX083-973-1048</p>
+
+        </div>
+
+        <div class="footer__link-wrap">
+          <a href="link.html" class="footer__link-item">› リンク一覧</a>
+          <a href="privacy.html" class="footer__link-item">　› 個人情報保護方針</a>
+
+        </div>
+        <a href="#" class="footer__top-btn top-to-js">
+          <img src="assets/img/top/top-btn.png">
+        </a>
+
+      </div>
+
+
+    </div>
+    <div class="footer__bottom">
+      Copyright ©　公益社団法人 山口県不動産鑑定士協会 All Rights Reserved.
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="assets/js/main.js">
+  </script>
+</body>
+
+</html>

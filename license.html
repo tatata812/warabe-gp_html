@@ -1,0 +1,266 @@
+<!-- <?php
+  $des="サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。"
+  ; ?> -->
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="email=no,telephone=no,address=no">
+  <!--!!!!!!!!!!!!!!!!!WPでは不要!!!!!!!!!!!!!!!!!!!!!-->
+  <title>不動産鑑定士になるには</title>
+  <meta name="description" content="<?php echo $des; ?>">
+  <!--!!!!!!!!!!!!!!!!!公開時、allに変更する!!!!!!!!!!!!!!!!!!!!!-->
+  <meta name="robots" content="none">
+  <meta property="og:type" content="website">
+  <meta property="og:title"
+    content="<?php wp_title( '-', true, 'right' ); ?><?php bloginfo( 'name' ); ?> | <?php echo $des; ?>">
+  <meta property="og:description" content="<?php echo $des; ?>">
+  <meta property="og:site_name"
+    content="<?php wp_title( '-', true, 'right' ); ?><?php bloginfo( 'name' ); ?> | <?php echo $des; ?>">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>assets/img/fb.jpg">
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title"
+    content="<?php wp_title( '-', true, 'right' ); ?><?php bloginfo( 'name' ); ?> | <?php echo $des; ?>">
+    <meta name="twitter:description" content="<?php echo $des; ?>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+  <link rel="stylesheet" href="assets/css/html5reset-1.6.1.css">
+  <link rel="stylesheet" href="assets/css/style.css?20230220">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body class="wrap">
+
+  <header class="header">
+    <div class="header__inner">
+      <h1 class="header__ttl-wrap header__item"><a href="index.html" class="header__ttl"><img
+            src="assets/img/top/logo.png" alt=""></a>
+      </h1>
+      <nav class="header__menu-wrap header__item">
+        <div class="header__menu-inner">
+          <a href="overview.html" class="header__menu">協会概要</a>
+          <a href="about.html" class="header__menu">不動産鑑定士とは</a>
+          <a href="license.html" class="header__menu">不動産鑑定士になるには</a>
+          <a href="member.html" class="header__menu">会員紹介</a>
+          <a href="contact.html" class="header__menu">お問い合わせ</a>
+          <a href="access.html" class="header__menu">アクセス</a>
+        </div>
+      </nav>
+      <div class="header__btn-wrap header__item">
+        <button class="hamburger-menu" id="js-hamburger-menu">
+          <span class="hamburger-menu__bar"></span>
+          <span class="hamburger-menu__bar"></span>
+          <span class="hamburger-menu__bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="header-sp">
+      <div class="header-sp__inner">
+        <ul class="header-sp__nav-list">
+          <li class="header-sp__nav-item"><a href="overview.html" class="header-sp__nav-link">協会概要</a></li>
+          <li class="header-sp__nav-item"><a href="about.html" class="header-sp__nav-link">不動産鑑定士とは</a></li>
+          <li class="header-sp__nav-item header-sp__nav-item--margin"><a href="license.html"
+              class="header-sp__nav-link">不動産鑑定士になるには</a></li>
+          <li class="header-sp__nav-item"><a href="pamphlet.html" class="header-sp__nav-link">パンフレット不動産鑑定士やまぐち</a></li>
+          <li class="header-sp__nav-item"><a href="delivery.html" class="header-sp__nav-link">出前講座</a></li>
+          <li class="header-sp__nav-item"><a href="session.html" class="header-sp__nav-link">無料相談会</a></li>
+          <li class="header-sp__nav-item"><a href="advice.html" class="header-sp__nav-link">不動産鑑定無料相談所</a></li>
+          <li class="header-sp__nav-item"><a href="data.html" class="header-sp__nav-link">地価公示・地価調査</a></li>
+          <li class="header-sp__nav-item"><a href="directory.html" class="header-sp__nav-link">地価要覧</a></li>
+          <li class="header-sp__nav-item"><a href="market.html" class="header-sp__nav-link">山口県不動産市況ＤＩ調査</a></li>
+          <li class="header-sp__nav-item header-sp__nav-item--margin"><a href="member.html"
+              class="header-sp__nav-link">会員紹介</a></li>
+          <li class="header-sp__nav-item"><a href="information.html" class="header-sp__nav-link">お知らせ一覧</a></li>
+          <li class="header-sp__nav-item"><a href="contact.html" class="header-sp__nav-link">お問い合わせ</a></li>
+          <li class="header-sp__nav-item"><a href="access.html" class="header-sp__nav-link">アクセス</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <div class="main page-license">
+    <section class="page-main-visual">
+      <div class="page-main-visual__wrap">
+        <div class="page-main-visual__text-wrap">
+          <h1 class="page-main-visual__ttl page-style__ttl">
+            不動産鑑定士になるには
+          </h1>
+          <p class="page-main-visual__text">不動産鑑定士になるためには、 国土交通省土地鑑定委員会が実施する不動産鑑定士試験（短答式及び論文式試験）に合格し、一定期間の実務修習のすべての課程を修了した上で、国土交通大臣の登録を受ける必要があります。</p>
+          <p class="page-main-visual__text">不不動産鑑定士は、 不動産の価格を適正に判定できる唯一の国家資格です。</p>
+          <div class="page-main-visual__btn-wrap">
+            <a href="#content01" class="page-main-visual__btn">不動産鑑定士試験概要</a>
+            <a href="#content02" class="page-main-visual__btn">資格取得後は</a>
+
+          </div>
+
+        </div>
+
+        <div class="page-main-visual__left-img">
+          <img src="assets/img/subpage/page-top-license.png">
+        </div>
+        <div class="page-main-visual__bottom-img">
+          <img src="assets/img/top/main-visual-bottom-img.png">
+        </div>
+      </div>
+    </section>
+
+
+    <section class="page-license__section sides-bg">
+      <div class="page-license__content" id="content01">
+        <h2 class="page-license__content-ttl page-style__ttl">
+          不動産鑑定士試験概要
+        </h2>
+        <div class="page-license__box">
+          <div class="page-license__left">
+            <img src="assets/img/subpage/page-license01.png">
+          </div>
+          <div class="page-license__right">
+            <p class="page-license__right-text">
+              不動産鑑定士は試験合格がゴールではありません。登録してはじめて不動産鑑定士として活動することが認められます。出願から不動産鑑定士を名乗れるようになるには最短でも約2年かかります。</p>
+            <!-- <a href="contact.html" class="page-license__right-link">試験概要について問い合わせてみる</a> -->
+          </div>
+        </div>
+        <div class="page-license__table-wrap">
+          <h3 class="page-license__table-ttl">短答式試験</h3>
+          <table class="page-license__table table-style">
+            <tr>
+              <th>試験科目</th>
+              <td>不動産に関する行政法規／不動産の鑑定評価に関する理論の2科目</td>
+            </tr>
+            <tr>
+              <th>受験資格</th>
+              <td>年齢、学歴、性別、国籍を問わず誰でも受験できる</td>
+            </tr>
+            <tr>
+              <th>試験日</th>
+              <td>毎年1回、5月実施</td>
+            </tr>
+          </table>
+          <h3 class="page-license__table-ttl">論文式試験</h3>
+          <table class="page-license__table table-style">
+            <tr>
+              <th>試験科目</th>
+              <td>民法／経済学／会計学／不動産の鑑定評価に関する理論(演習問題)／<br>
+                不動産の鑑定評価に関する理論(論文問題)の5科目</td>
+            </tr>
+            <tr>
+              <th>受験資格</th>
+              <td>短答式試験合格者</td>
+            </tr>
+            <tr>
+              <th>試験日</th>
+              <td>毎年1回、8月上旬頃実施(3日間)</td>
+            </tr>
+          </table>
+          <h3 class="page-license__table-ttl">実務修習</h3>
+          <table class="page-license__table table-style">
+            <tr>
+              <td class="page-license__td">国土交通大臣の登録を受けた実務修習機関において「実務修習」を受けます。</td>
+            </tr>
+          </table>
+          <h3 class="page-license__table-ttl">不動産鑑定士</h3>
+          <table class="page-license__table table-style">
+            <tr>
+              <td class="page-license__td">実務修習修了考査の結果、修了を認められ、国土交通大臣の修了の確認を受けた者が
+                不動産鑑定士として登録することができます。</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="page-license__content" id="content02">
+        <h2 class="page-license__content-ttl page-style__ttl">
+          資格取得後は
+        </h2>
+        <div class="page-license__box">
+          <div class="page-license__left">
+            <img src="assets/img/subpage/page-license02.png">
+          </div>
+          <div class="page-license__right">
+            <p class="page-license__right-text">
+              資格取得後は、不動産会社をはじめ、金融機関やコンサルタント、シンクタンクなどの一般企業に所属する企業内鑑定士として働いたり、あるいは独立開業して新たな事業をスタートさせるなど、さまざまな働き方が可能です。</p>
+            <!-- <a href="contact.html" class="page-license__right-link">試験概要について問い合わせてみる</a> -->
+          </div>
+        </div>
+        <div class="page-license__table-wrap">
+          <h3 class="page-license__table-ttl">企業内鑑定士</h3>
+          <table class="page-license__table table-style">
+            <tr>
+              <td class="page-license__td">一般企業に所属し、鑑定評価部門において鑑定評価等業務を行うことや、不動産鑑定士の
+                知見を活用して他部門で活躍できます。<br>
+                （ 不動産会社／信託銀行／生保・損保会社　ほか）</td>
+            </tr>
+          </table>
+          <h3 class="page-license__table-ttl">不動産鑑定士</h3>
+          <table class="page-license__table table-style">
+            <tr>
+              <td class="page-license__td">不動産鑑定業の登録を受け、不動産鑑定事務所を開業することができます。</td>
+            </tr>
+          </table>
+          <p class="page-license__last-text">詳しくは<a href="https://www.mlit.go.jp/totikensangyo/kanteishi/shiken.html" target="_blank"  class="page-license__last-text-link">国交省ホームページ</a>をご覧ください<br class="sp-block">（別ウィンドウで開きます）</p>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+  </div>
+  <!--main end-->
+
+
+  <footer class="footer">
+
+
+    <div class="footer__top">
+      <div class="footer__top-inner">
+        <a href="#" class="footer__ttl"><span>公益社団法人</span>山口県不動産鑑定士協会</a>
+        <div class="footer__address">
+          〒754-0021<br>
+          山口市小郡黄金町11-4　富士ハイツ1F
+        </div>
+        <div class="footer__tel-wrap">
+          <a href="tel:083-973-1051" class="footer__tel">TEL083-973-1051</a>
+          <p class="footer__fax">FAX083-973-1048</p>
+
+        </div>
+
+        <div class="footer__link-wrap">
+          <a href="link.html" class="footer__link-item">› リンク一覧</a>
+          <a href="privacy.html" class="footer__link-item">　› 個人情報保護方針</a>
+
+        </div>
+        <a href="#" class="footer__top-btn top-to-js">
+          <img src="assets/img/top/top-btn.png">
+        </a>
+
+      </div>
+
+
+    </div>
+    <div class="footer__bottom">
+      Copyright ©　公益社団法人 山口県不動産鑑定士協会 All Rights Reserved.
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="assets/js/main.js">
+  </script>
+</body>
+
+</html>

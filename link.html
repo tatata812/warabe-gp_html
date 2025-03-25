@@ -1,0 +1,176 @@
+<!-- <?php
+  $des="サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。"
+  ; ?> -->
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="email=no,telephone=no,address=no">
+  <!--!!!!!!!!!!!!!!!!!WPでは不要!!!!!!!!!!!!!!!!!!!!!-->
+  <title>リンク一覧</title>
+  <meta name="description" content="<?php echo $des; ?>">
+  <!--!!!!!!!!!!!!!!!!!公開時、allに変更する!!!!!!!!!!!!!!!!!!!!!-->
+  <meta name="robots" content="none">
+  <meta property="og:type" content="website">
+  <meta property="og:title"
+    content="<?php wp_title( '-', true, 'right' ); ?><?php bloginfo( 'name' ); ?> | <?php echo $des; ?>">
+  <meta property="og:description" content="<?php echo $des; ?>">
+  <meta property="og:site_name"
+    content="<?php wp_title( '-', true, 'right' ); ?><?php bloginfo( 'name' ); ?> | <?php echo $des; ?>">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>assets/img/fb.jpg">
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title"
+    content="<?php wp_title( '-', true, 'right' ); ?><?php bloginfo( 'name' ); ?> | <?php echo $des; ?>">
+  <meta name="twitter:description" content="<?php echo $des; ?>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+  <link rel="stylesheet" href="assets/css/html5reset-1.6.1.css">
+  <link rel="stylesheet" href="assets/css/style.css?20230220">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body class="wrap">
+
+  <header class="header">
+    <div class="header__inner">
+      <h1 class="header__ttl-wrap header__item"><a href="index.html" class="header__ttl"><img
+            src="assets/img/top/logo.png" alt=""></a>
+      </h1>
+      <nav class="header__menu-wrap header__item">
+        <div class="header__menu-inner">
+          <a href="overview.html" class="header__menu">協会概要</a>
+          <a href="about.html" class="header__menu">不動産鑑定士とは</a>
+          <a href="license.html" class="header__menu">不動産鑑定士になるには</a>
+          <a href="member.html" class="header__menu">会員紹介</a>
+          <a href="contact.html" class="header__menu">お問い合わせ</a>
+          <a href="access.html" class="header__menu">アクセス</a>
+        </div>
+      </nav>
+      <div class="header__btn-wrap header__item">
+        <button class="hamburger-menu" id="js-hamburger-menu">
+          <span class="hamburger-menu__bar"></span>
+          <span class="hamburger-menu__bar"></span>
+          <span class="hamburger-menu__bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="header-sp">
+      <div class="header-sp__inner">
+        <ul class="header-sp__nav-list">
+          <li class="header-sp__nav-item"><a href="overview.html" class="header-sp__nav-link">協会概要</a></li>
+          <li class="header-sp__nav-item"><a href="about.html" class="header-sp__nav-link">不動産鑑定士とは</a></li>
+          <li class="header-sp__nav-item header-sp__nav-item--margin"><a href="license.html"
+              class="header-sp__nav-link">不動産鑑定士になるには</a></li>
+          <li class="header-sp__nav-item"><a href="pamphlet.html" class="header-sp__nav-link">パンフレット不動産鑑定士やまぐち</a></li>
+          <li class="header-sp__nav-item"><a href="delivery.html" class="header-sp__nav-link">出前講座</a></li>
+          <li class="header-sp__nav-item"><a href="session.html" class="header-sp__nav-link">無料相談会</a></li>
+          <li class="header-sp__nav-item"><a href="advice.html" class="header-sp__nav-link">不動産鑑定無料相談所</a></li>
+          <li class="header-sp__nav-item"><a href="data.html" class="header-sp__nav-link">地価公示・地価調査</a></li>
+          <li class="header-sp__nav-item"><a href="directory.html" class="header-sp__nav-link">地価要覧</a></li>
+          <li class="header-sp__nav-item"><a href="market.html" class="header-sp__nav-link">山口県不動産市況ＤＩ調査</a></li>
+          <li class="header-sp__nav-item header-sp__nav-item--margin"><a href="member.html"
+              class="header-sp__nav-link">会員紹介</a></li>
+          <li class="header-sp__nav-item"><a href="information.html" class="header-sp__nav-link">お知らせ一覧</a></li>
+          <li class="header-sp__nav-item"><a href="contact.html" class="header-sp__nav-link">お問い合わせ</a></li>
+          <li class="header-sp__nav-item"><a href="access.html" class="header-sp__nav-link">アクセス</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <div class="main page-link page-delivery sub-page">
+
+    <h1 class="sub-page__ttl">リンク一覧
+
+      <div class="sub-page__img">
+        <img src="assets/img/subpage/sub-page-img.png">
+      </div>
+    </h1>
+    <section class="sub-page__section">
+      <p class="sub-page__lead">当協会の関係諸団体・官公庁へのリンク</p>
+      <div class="sub-page__section-inner">
+        <h2 class="page-delivery__h2">関係諸団体</h2>
+        <a href="http://www.fudousan-kanteishi.or.jp/" target="_blank" class="page-delivery__link">公益社団法人日本不動産鑑定士協会連合会</a>
+        <a href="https://www.fudousan-kanteishi.or.jp/cyoutei/" target="_blank" class="page-delivery__link">不動産鑑定士調停センター</a>
+        <hr>
+        <h2 class="page-delivery__h2">官公庁</h2>
+        <a href="	http://www.pref.yamaguchi.lg.jp/" target="_blank" class="page-delivery__link">山口県</a>
+        <a href="http://www.mlit.go.jp/" target="_blank" class="page-delivery__link">国土交通省</a>
+        <a href="https://www.nta.go.jp/" target="_blank" class="page-delivery__link">国税庁</a>
+        <a href="http://www.soumu.go.jp/" target="_blank" class="page-delivery__link">総務省</a>
+        <a href="http://www.mof.go.jp/" target="_blank" class="page-delivery__link">財務省</a>
+        <a href="http://www.fsa.go.jp/" target="_blank" class="page-delivery__link">金融庁</a>
+        <a href="http://www.maff.go.jp/" target="_blank" class="page-delivery__link">農林水産省</a>
+        <a href="http://www.meti.go.jp/" target="_blank" class="page-delivery__link">経済産業省</a>
+        <a href="http://www.moj.go.jp/" target="_blank" class="page-delivery__link">法務省</a>
+        <a href="http://www.env.go.jp/" target="_blank" class="page-delivery__link">環境省</a>
+        <a href="http://www.boj.or.jp/" target="_blank" class="page-delivery__link">日本銀行</a>
+        <a href="	http://www.mofa.go.jp/mofaj/gaiko/oecd/" target="_blank" class="page-delivery__link">外務省: 経済協力開発機構（OECD）</a>
+        <a href="	http://www.stat.go.jp/" target="_blank" class="page-delivery__link">総務省統計局</a>
+        <hr>
+      </div>
+
+    </section>
+
+
+
+
+
+
+  </div>
+  <!--main end-->
+
+
+  <footer class="footer">
+
+
+    <div class="footer__top">
+      <div class="footer__top-inner">
+        <a href="#" class="footer__ttl"><span>公益社団法人</span>山口県不動産鑑定士協会</a>
+        <div class="footer__address">
+          〒754-0021<br>
+          山口市小郡黄金町11-4　富士ハイツ1F
+        </div>
+        <div class="footer__tel-wrap">
+          <a href="tel:083-973-1051" class="footer__tel">TEL083-973-1051</a>
+          <p class="footer__fax">FAX083-973-1048</p>
+
+        </div>
+
+        <div class="footer__link-wrap">
+          <a href="link.html" class="footer__link-item">› リンク一覧</a>
+          <a href="privacy.html" class="footer__link-item">　› 個人情報保護方針</a>
+
+        </div>
+        <a href="#" class="footer__top-btn top-to-js">
+          <img src="assets/img/top/top-btn.png">
+        </a>
+
+      </div>
+
+
+    </div>
+    <div class="footer__bottom">
+      Copyright ©　公益社団法人 山口県不動産鑑定士協会 All Rights Reserved.
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="assets/js/main.js">
+  </script>
+</body>
+
+</html>
