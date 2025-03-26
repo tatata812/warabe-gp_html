@@ -100,6 +100,13 @@ table {
   padding: 0 12px;
 }
 
+
+// 下層ページ共通
+
+.subpage {
+
+}
+
 // ローディング画面
 .loading-anime-wrap {
   position: fixed;
@@ -153,10 +160,10 @@ table {
     transform: translate(0, 0);
   }
 
-  @include tab {
-    opacity: 1;
-    transform: translate(0, 0);
-  }
+  // @include tab {
+  //   opacity: 1;
+  //   transform: translate(0, 0);
+  // }
 }
 
 .fadein-anime02 {
@@ -167,9 +174,9 @@ table {
     opacity: 1;
   }
 
-  @include tab {
-    opacity: 1;
-  }
+  // @include tab {
+  //   opacity: 1;
+  // }
 }
 
 .fadein-anime03 {
