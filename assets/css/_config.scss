@@ -166,6 +166,37 @@ th,td {
   }
 }
 
+// Followメニュー
+
+.follow-btn {
+  position: fixed;
+bottom:100px;
+right: 0;
+opacity: 0;
+transform: translate(80px, 0);
+transition: all 0.5s;
+
+@include tab{
+  bottom:60px;
+
+}
+
+&.active {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+&__item {
+  width: 80px;
+  display: block;
+
+  @include tab{
+    width: 60px;
+    
+
+  }
+}
+}
 
 //スクロースしたら表示
 

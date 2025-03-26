@@ -67,6 +67,20 @@ $(function () {
       }
     });
   });
+  
+
+  $(window).scroll(function() {
+    // 要素の位置を取得
+    var targetTop = $(".follow-btn-js").offset().top;
+    // 要素の上端が画面上端から 200px 以上離れているかどうかを確認
+    if (targetTop >= 800) {
+      // 要素にクラスを付与
+      $(".follow-btn-js").addClass("active");
+    } else {
+      // 要素からクラスを削除
+      $(".follow-btn-js").removeClass("active");
+    }
+  });
 
 
   $(function () {
