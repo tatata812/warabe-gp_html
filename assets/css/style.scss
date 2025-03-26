@@ -30,7 +30,7 @@ header
   width: 100%;
   transition: transform 0.3s;
   background-color: #fff;
-  height: 64px;
+  height: 58px;
 
   @include tab {
     height: 50px;
@@ -67,12 +67,9 @@ header
     max-width: 100px;
     margin: 0 auto 0 0;
 
-
     @include tab {
       max-width: 70px;
-
     }
-
   }
 
   &__menu-wrap {
@@ -88,8 +85,6 @@ header
 
     @include pc {
       gap: 24px;
-
-
     }
   }
 
@@ -120,91 +115,18 @@ header
     display: block;
     cursor: pointer;
     z-index: 99;
-    top: 4px;
+    top: 10px;
     right: 12px;
     position: absolute;
   }
 
   &__btn-img {
-    width: 40px;
+    width: 32px;
   }
-
-  // &__circle {
-  //   border-radius: 50%;
-  //   width: 40px;
-  //   height: 40px;
-  //   line-height: 40px;
-  //   border: #3100f4 1px solid;
-  //   position: absolute;
-  // }
 }
 
 
-// ハンバーガーメニュー
-// .hamburger-menu {
-//   width: 40px;
-//   height: 40px;
-//   position: relative;
-//   border: none;
-//   background: transparent;
-//   appearance: none;
-//   padding: 0;
-//   cursor: pointer;
-// }
 
-// .hamburger-menu__bar {
-//   display: inline-block;
-//   width: 44%;
-//   height: 1px;
-//   background: #1C1C1C;
-//   position: absolute;
-//   left: 48%;
-//   transform: translateX(-50%);
-//   transition: .5s;
-
-// }
-
-// .hamburger-menu__bar:first-child {
-//   top: 13px;
-// }
-
-// .hamburger-menu__bar:nth-child(2) {
-//   top: 19px;
-// }
-
-// .hamburger-menu__bar:last-child {
-//   top: 25px;
-// }
-
-// .ios:first-child {
-//   top: 7px;
-// }
-
-// .ios:nth-child(2) {
-//   top: 14px;
-// }
-
-// .ios:last-child {
-//   top: 20px;
-// }
-
-// .hamburger-menu--open .hamburger-menu__bar {
-//   top: 45%;
-//   width: 54%;
-
-// }
-
-// .hamburger-menu--open .hamburger-menu__bar:first-child {
-//   transform: translateX(-50%) translateY(-50%) rotate(28deg);
-// }
-
-// .hamburger-menu--open .hamburger-menu__bar:last-child {
-//   transform: translateX(-50%) translateY(-50%) rotate(-28deg);
-// }
-
-// .hamburger-menu--open .hamburger-menu__bar:nth-child(2) {
-//   display: none;
-// }
 
 
 .header-sp {
@@ -215,495 +137,310 @@ header
   position: fixed;
   top: -4px;
   right: 0;
-  padding: 40px;
+  padding: 80px 40px 0;
   background-color: #fff;
   height: 100vh;
   width: 90%;
 
-  @include sp {
-    padding: 24px;
-  }
 
   &.active {
     opacity: 1;
     transition: all 0.3s;
     transform: translate(0, 3px);
     z-index: 100;
-
   }
-
-  &__inner {
-    max-width: 1200px;
-    margin: 0 auto;
-    background-color: #fff;
-    padding: 12px;
-  }
-
 
   &__btn-img {
-    width: 40px;
-    margin: 0 0 0 auto;
+    width: 32px;
+    display: block;
+    cursor: pointer;
+    z-index: 99;
+    top: 10px;
+    right: 12px;
+    position: absolute;
   }
 
+  &__link {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 12px;
+  }
 
-  &__nav-item {
-    text-align: right;
+  &__link-item {
+    display: flex;
+    gap: 10px;
 
 
-    &--margin {
-      margin: 0 0 16px;
+    img {
+      width: 24px;
+    }
+
+    span {
+      white-space: nowrap;
     }
   }
 
+  &__menu {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+    margin: 0 0 24px;
 
-
-
+  }
 }
 
 
 /* =================================
-メインビジュアル
+トップページ
  ================================= */
-
+// メインビジュアル
 .main-visual {
-  position: relative;
-  margin: 40px 0 60px;
 
-  @include sp {
-    margin: 40px 0 0;
+  &__video {
 
-  }
-
-
-  &__top {}
-
-
-  &__bottom-img {
-    width: 70%;
+    width: 100%;
+    height: 100vh;
+    background: url(../img/top/top-about02.jpg) no-repeat center/cover;
     position: absolute;
-    bottom: -50px;
-    left: 50%;
-    transform: translateX(-50%);
-
-    @include sp {
-      width: 90%;
-      bottom: -30px;
-    }
-  }
-
-
-}
-
-
-/* =================================
-不動産鑑定士協会について
- ================================= */
-.top-about {
-  padding: 80px 20px 180px;
-  position: relative;
-  max-width: 1400px;
-  overflow: hidden;
-
-  @include tab {
-    padding: 100px 20px 150px;
-  }
-
-  @include sp {
-    padding: 100px 20px 100px;
-
-  }
-
-  &__left-bg {
-    position: absolute;
-    top: 60px;
-    left: -50px;
-    width: 340px;
+    top: 0;
+    left: 0;
+    overflow: hidden;
     z-index: -1;
 
-    @include pc {
-      display: none;
-    }
-  }
-
-  &__right-bg {
-    position: absolute;
-    top: 60px;
-    right: -50px;
-    width: 340px;
-    z-index: -1;
-
-    @include pc {
-      display: none;
-    }
-
-  }
-
-  &__inner {
-    max-width: 600px;
-    margin: 0 auto;
-    position: relative;
-  }
-
-  &__text-left-img {
-    position: absolute;
-    width: 366px;
-    bottom: 25px;
-    left: -135px;
-    z-index: -1;
-
-    @include sp {
-      width: 266px;
-    }
-  }
-
-  &__text-right-img {
-    position: absolute;
-    width: 280px;
-    width: 259px;
-    top: -27px;
-    right: -60px;
-    z-index: -1;
-
-    @include sp {
-      width: 180px;
-      right: -20px;
-
-    }
-
-  }
-
-  &__ttl {
-    margin: 0 0 40px;
-
-    @include sp {
-      margin: 0 0 32px;
-
+    video {
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
     }
   }
 
   &__text {
-    font-size: 16px;
-    margin: 0 0 32px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    @include sp {
-      font-size: 14px;
-      margin: 0 0 24px;
-
+    p {
+      color: #fff;
     }
   }
-
-  &__btn {
-    width: 220px;
-    margin: 0 auto 100px;
-
-    @include sp {
-      margin: 0 auto 20px;
-
-    }
-  }
-
 }
 
-/* =================================
-お知らせ
- ================================= */
 
-.top-info {
-  background-color: #f8fbf2;
-  padding: 80px 12px;
-  position: relative;
 
-  @include sp {
-    padding: 40px 12px;
+.top-history {
+  padding: 0 12px 140px;
 
+  @include tab {
+    padding: 0 12px 60px;
   }
 
-  &__top-img {
-    position: absolute;
-    width: 720px;
-    top: -230px;
-    left: 50%;
-    transform: translateX(-50%);
+  &__img {
+    max-width: 780px;
+    margin: 0 auto 60px;
 
     @include tab {
-      width: 520px;
-      top: -160px;
-    }
-
-    @include sp {
-      width: 260px;
-      top: -80px;
+      margin: 0 auto 32px;
     }
   }
 
-  &__inner {
-    background-color: #fff;
-    max-width: 980px;
-    margin: 0 auto;
-    border-radius: 12px;
-    padding: 40px;
+  &__text {
+    text-align: center;
+    margin: 0 0 60px;
 
-    @include sp {
-      padding: 20px;
+    &:last-child {
+      margin: 0;
+    }
 
+    @include tab {
+      text-align: left;
+      margin: 0 auto 32px;
+    }
+  }
+}
+
+
+
+.top-about {
+  padding: 0 0 140px;
+
+  @include tab {
+    padding: 0 0 80px;
+
+  }
+
+  &__box {
+    display: flex;
+
+    @include tab {
+      flex-direction: column;
+    }
+  }
+
+
+
+  &__text-wrap {
+    width: 50%;
+    background: #F6F6F6;
+    position: relative;
+
+    @include tab {
+      width: 100%;
     }
 
   }
 
-  &__ttl {
-    margin: 0 0 24px;
+  &__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
 
-    @include sp {
-      margin: 0 0 4px;
-
+    @include tab {
+      position: static;
+      transform: translate(0, 0);
+      padding: 60px 12px;
     }
 
-    &--sub {
-      margin: 0 0 12px;
 
-      @include sp {
-        text-align: left;
+  }
+
+  &__img {
+    width: 50%;
+
+    @include tab {
+      width: 100%;
+
+      &--order {
+        order: -1;
       }
     }
   }
 
-  &__article-wrap {
-    margin: 0 0 60px;
-
-    @include sp {
-      margin: 0 0 32px;
-
-    }
-  }
-
-  &__article {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 32px;
-    align-items: center;
-    border-bottom: #1C1C1C 1px solid;
-    padding: 8px 2px;
-
-    &:first-child {
-      border-top: #1C1C1C 1px solid;
-    }
-
-    @include sp {
-      gap: 8px;
-
-    }
-
-  }
-
-  &__date {
-    font-size: 13px;
-
-  }
-
-  &__cat {
-    font-size: 13px;
-    border: #d0bd9b 2px solid;
-    width: 90px;
+  &__bottom-text {
     text-align: center;
-    border-radius: 20px;
-    line-height: 1;
-    padding: 4px;
+    padding: 0 12px;
+    margin: 60px 0 0;
 
-    @include sp {
-      margin: 0 0 0 12px;
-    }
+    @include tab {
+      text-align: left;
+      margin: 32px 0 0;
 
-    &--kaiin {
-      border: #d09bbf 2px solid;
-
-    }
-
-    &--koza {
-      border: #9bb2d0 2px solid;
 
     }
   }
-
-  &__article-ttl-wrap {}
-
-  &__article-ttl {
-    font-size: 17px;
-  }
-
-  &__article-extract {
-    font-size: 14px;
-  }
-
-  &__btn {
-    width: 220px;
-  }
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-
 }
 
 
 
-/* =================================
-メニュー
- ================================= */
-.top-menu {
-  padding: 80px 12px;
-  position: relative;
-  max-width: 1500px;
-  overflow: hidden;
+.top-store {
+  padding: 0 12px 140px;
 
   @include tab {
-    padding: 40px 12px 0;
+    padding: 0 12px 80px;
+
   }
 
+  &__lead {
+    text-align: center;
+    margin: -40px 0 60px;
 
 
-  &__left-bg {
-    position: absolute;
-    top: 0;
-    left: -50px;
-    width: 340px;
-    z-index: -1;
 
-    @include pc {
-      display: none;
+    @include tab {
+      text-align: left;
+      margin: 0 auto 32px;
     }
   }
 
-  &__right-bg {
-    position: absolute;
-    top: 0;
-    right: -50px;
-    width: 340px;
-    z-index: -1;
-
-    @include pc {
-      display: none;
-    }
-
-  }
-
-  &__top-img {
-    max-width: 480px;
-    margin: 0 auto;
-
-  }
-
-  &__inner {
-    max-width: 920px;
-    margin: 40px auto;
+  &__box {
     display: flex;
-    gap: 32px;
-    flex-wrap: wrap;
+    max-width: 1120px;
+    margin: 0 auto;
+    gap: 24px;
 
     @include tab {
       flex-direction: column;
-      align-items: center;
-      gap: 24px;
     }
   }
 
   &__item {
-    width: calc((100% - 32px) / 2);
-    border: #c8e098 2px solid;
-    border-radius: 10px;
-    padding: 24px;
-    position: relative;
-    background-color: #fff;
+    width: calc((100% - 24px) / 2);
 
     @include tab {
       width: 100%;
-      overflow: hidden;
     }
   }
 
-  &__ttl {
-    text-align: center;
-    margin: 0 0 12px;
-    position: relative;
-    z-index: 1;
-  }
+  &__item-ttl {
+    font-size: 24px;
+    margin: 0 0 20px;
 
-  &__item-text {
-    margin: 0 0 24px;
-    position: relative;
-    z-index: 1;
-  }
-
-  &__btn {
-    width: 220px;
-    position: relative;
-    z-index: 1;
+    @include tab {
+      font-size: 20px;
+      margin: 0 0 12px;
+    }
   }
 
   &__item-img {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 0;
-    width: 25%;
-
-    &--02 {
-      width: 15%;
-
-    }
+    margin: 0 0 20px;
   }
 
+  &__link {
+    max-width: 160px;
+    display: block;
+    margin: 0 0 0 auto;
+  }
 
 }
 
+.top-insta {
+  padding: 0 12px 140px;
 
-/* =================================
-バナーセクション
- ================================= */
-
-.bnr-section {
-  background-color: #f8fbf2;
-  padding: 40px 12px;
+  @include tab {
+    padding: 0 12px 60px;
+  }
 
   &__inner {
-    display: flex;
-    justify-content: center;
-    gap: 60px;
-    align-items: center;
+    max-width: 1120px;
+    margin: 0 auto;
+  }
 
-    @include sp {
-      flex-direction: column;
-      gap: 24px;
+  &__sub-ttl {
+    font-size: 24px;
+    margin: 0 0 20px;
 
+    @include tab {
+      font-size: 20px;
+      margin: 0 0 12px;
     }
   }
 
-  &__item {
-    max-width: 320px;
+  &__box {
+    height: 300px;
+    background-color: #acacac;
+    margin: 0 0 60px;
 
-    @include sp {
-      max-width: 320px;
+    &:last-child {
+      margin: 0;
     }
   }
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
 
 }
+
+
+
 
 
 
@@ -713,208 +450,82 @@ footer
 
 .footer {
   background-color: #1C1C1C;
+  padding: 48px 12px;
 
-  &__top {
-    padding: 40px 12px;
-
-    background-color: #1C1C1C;
-  }
-
-  &__top-inner {
-    max-width: 300px;
-    margin: 0 auto;
-    position: relative;
-  }
-
-  &__ttl {
-    color: #fff;
-    font-size: 18px;
-    margin: 0 0 18px;
-    display: block;
-
-    span {
-      font-size: 80%;
-      display: block;
+  &__inner {
+    @include tab {
+      max-width: 540px;
+      margin: 0 auto;
     }
   }
 
-  &__address {
-    color: #fff;
-    font-size: 75%;
+
+  &__logo {
+    max-width: 60px;
+    display: block;
+    margin: 0 auto 28px;
   }
 
-  &__tel-wrap {
+  &__link {
     display: flex;
-    gap: 12px;
-    margin: 0 0 18px;
-  }
+    justify-content: center;
+    gap: 40px;
+    margin: 0 0 24px;
 
-  &__tel {
-    color: #fff;
-  }
-
-  &__fax {
-    color: #fff;
-  }
-
-  &__link-wrap {
-    display: flex;
-    gap: 16px;
+    @include tab {
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
 
   }
-
 
   &__link-item {
+    display: flex;
     color: #fff;
+    gap: 10px;
 
-  }
 
-  &__top-btn {
-    position: absolute;
-    right: -100px;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
 
-    @include pc {
-      right: 20px;
-      bottom: -46px;
+    img {
+      width: 24px;
     }
 
-
-
-    @include sp {
-      bottom: -63px;
-      right: 2px;
-
-
+    span {
+      white-space: nowrap;
     }
-
   }
 
-  &__ {}
+  &__menu {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 20px;
 
+    @include tab {
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+    }
+  }
 
+  &__menu-item {
+    color: #fff;
+    border-left: 1px solid #fff;
+    padding: 0 12px;
 
+    &:first-child {
+      border-left: none;
+    }
+
+    @include tab {
+      border-left: none;
+
+    }
+  }
 
   &__bottom {
+    font-size: 10px;
     text-align: center;
-    font-size: 11px;
-    padding: 8px;
-    background-color: #fff;
-    color: #1C1C1C;
-  }
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-
-}
-
-
-.footer-content {
-
-  &__nav {
-    display: flex;
-    gap: 40px;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 0 0 40px;
-
-    @include tab {
-      gap: 8px;
-      justify-content: flex-start;
-
-    }
-  }
-
-  &__nav-item {
     color: #fff;
-
-    @include tab {
-      width: 47%;
-
-    }
   }
-
-  &__ttl-wrap {
-    display: flex;
-    gap: 40px;
-    justify-content: center;
-    flex-wrap: wrap;
-    position: relative;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-
-  &__top-btn {
-    position: absolute;
-    right: -92px;
-    bottom: 0;
-    cursor: pointer;
-
-    @include pc {
-      right: 20px;
-      bottom: -46px;
-    }
-
-    @include tab {
-      width: 50px;
-
-    }
-
-    @include sp {
-      bottom: -63px;
-      right: 2px;
-
-
-    }
-  }
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-
 }
