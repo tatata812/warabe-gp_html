@@ -40,7 +40,7 @@ li {
   font-size: clamp(0.813rem, 0.79rem + 0.11vw, 0.875rem);
 }
 
-table {
+th, td {
   font-size: clamp(0.813rem, 0.79rem + 0.11vw, 0.875rem);
 }
 
@@ -81,6 +81,9 @@ table {
   .ttl-style span {
     font-size: 16px;
   }
+}
+.ttl-style--white {
+  color: #fff;
 }
 
 .section-style {
@@ -442,16 +445,18 @@ table {
     margin: 0 0 40px;
   }
 }
-.page-company__table-wrap {
-  max-width: 980px;
-  margin: 0 auto;
-}
+
 .outline {
-  padding: 0 12px;
+  padding: 0 12px 80px;
+}
+@media (max-width: 820px) {
+  .outline {
+    padding: 0 12px 48px;
+  }
 }
 .outline__table-wrap {
-  max-width: 680px;
-  margin: 0 auto 80px;
+  max-width: 720px;
+  margin: 0 auto;
 }
 .outline__table {
   width: 100%;
@@ -465,10 +470,107 @@ table {
 .outline__table th {
   text-align: left;
   padding: 12px 2px;
+  font-weight: 100;
 }
 .outline__table td {
   text-align: left;
   padding: 12px 2px;
+}
+.philosophy {
+  padding: 80px 12px;
+  background-color: #1C1C1C;
+}
+@media (max-width: 820px) {
+  .philosophy {
+    padding: 48px 12px 48px;
+  }
+}
+.philosophy__text {
+  max-width: 740px;
+  margin: 0 auto;
+  color: #fff;
+}
+.recruit {
+  padding: 80px 12px;
+}
+@media (max-width: 820px) {
+  .recruit {
+    padding: 48px 12px 48px;
+  }
+}
+.form {
+  padding: 80px 12px;
+}
+@media (max-width: 820px) {
+  .form {
+    padding: 48px 12px 48px;
+  }
+}
+.form__table-wrap {
+  max-width: 720px;
+  margin: 0 auto;
+}
+.form__table {
+  width: 100%;
+  margin: 0 0 40px;
+}
+.form__table th {
+  text-align: left;
+  padding: 12px 2px;
+  font-weight: 100;
+  width: 140px;
+}
+@media (max-width: 820px) {
+  .form__table th {
+    display: block;
+    width: 100%;
+    padding: 12px 2px 0;
+  }
+}
+.form__table td {
+  text-align: left;
+  padding: 12px 2px;
+  vertical-align: top;
+}
+@media (max-width: 820px) {
+  .form__table td {
+    display: block;
+    padding: 0 0 12px;
+  }
+}
+.form__table input[type=text] {
+  width: 100%;
+  padding: 4px;
+}
+.form__table input[type=radio] {
+  vertical-align: text-top;
+}
+.form__table textarea {
+  width: 100%;
+  padding: 4px;
+}
+.form__link {
+  text-decoration: underline;
+}
+.form__link-text {
+  text-align: center;
+  font-size: 13px;
+  margin: 0 0 16px;
+}
+.form input[type=submit] {
+  background-color: #1C1C1C;
+  color: #fff;
+  width: 160px;
+  padding: 8px;
+  margin: 0 auto;
+  display: block;
+}
+.form__check-wrap {
+  text-align: center;
+  margin: 0 0 40px;
+}
+.form input[type=checkbox] {
+  vertical-align: inherit;
 }
 /* =================================
 

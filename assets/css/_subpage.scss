@@ -32,54 +32,21 @@
 
     @include tab{
       margin: 0 0 40px;
-
     }
   }
-
-  &__table-wrap {
-    max-width: 980px;
-    margin: 0 auto;
-  }
-
-  &__table {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
 }
 
 
 .outline {
-  padding: 0 12px;
+  padding: 0 12px 80px;
+
+  @include tab{
+    padding: 0 12px 48px;
+  }
 
   &__table-wrap {
-    max-width: 680px;
-    margin: 0 auto 80px;
+    max-width: 720px;
+    margin: 0 auto;
   }
 
   &__table {
@@ -97,6 +64,7 @@
     th {
       text-align: left;
       padding: 12px 2px;
+      font-weight: 100;
     }
 
     td {
@@ -123,7 +91,48 @@
 
 }
 
-.aaa {
+.philosophy {
+  padding: 80px 12px;
+  background-color: #1C1C1C;
+
+  @include tab{
+    padding: 48px 12px 48px;
+  }
+
+  &__text {
+    max-width: 740px;
+    margin: 0 auto;
+    color: #fff;
+  }
+
+  
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+
+}
+
+.recruit {
+
+  padding: 80px 12px;
+
+  @include tab{
+    padding: 48px 12px 48px;
+  }
 
   &__ {}
 
@@ -146,11 +155,103 @@
 
 }
 
-.aaa {
 
-  &__ {}
+.form {
 
-  &__ {}
+  padding: 80px 12px;
+
+  @include tab{
+    padding: 48px 12px 48px;
+  }
+
+
+
+  &__table-wrap {
+    max-width: 720px;
+    margin: 0 auto ;
+  }
+
+  &__table {
+    width: 100%;
+    margin: 0 0 40px;
+
+    tr {
+
+    }
+
+    th {
+      text-align: left;
+      padding: 12px 2px;
+      font-weight: 100;
+      width: 140px;
+
+      @include tab{
+      display: block;
+      width: 100%;
+      padding: 12px 2px 0;
+
+      }
+    }
+
+    td {
+      text-align: left;
+      padding: 12px 2px;
+      vertical-align: top;
+
+
+      @include tab{
+        display: block;
+        padding: 0 0 12px;
+
+      }
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 4px;
+    }
+
+    input[type="radio"] {
+      vertical-align: text-top;
+    }
+
+    textarea {
+      width: 100%;
+      padding: 4px;
+    }
+
+
+
+
+
+  }
+  &__link {
+    text-decoration: underline;
+  }
+
+  &__link-text {
+    text-align: center;
+    font-size: 13px;
+    margin: 0 0 16px;
+  }
+
+  input[type="submit"] {
+    background-color: #1C1C1C;
+    color: #fff;
+    width: 160px;
+    padding: 8px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  &__check-wrap {
+    text-align: center;
+    margin: 0 0 40px;
+  }
+
+  input[type="checkbox"] {
+    vertical-align: inherit;
+  }
 
   &__ {}
 
