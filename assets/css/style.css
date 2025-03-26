@@ -41,7 +41,12 @@ li {
 }
 
 th, td {
-  font-size: clamp(0.813rem, 0.79rem + 0.11vw, 0.875rem);
+  font-size: 16px;
+}
+@media (max-width: 820px) {
+  th, td {
+    font-size: 14px;
+  }
 }
 
 .pc-block {
@@ -543,7 +548,7 @@ th, td {
   padding: 4px;
 }
 .form__table input[type=radio] {
-  vertical-align: text-top;
+  vertical-align: baseline;
 }
 .form__table textarea {
   width: 100%;
@@ -564,6 +569,12 @@ th, td {
   padding: 8px;
   margin: 0 auto;
   display: block;
+  transition: all 0.5s;
+}
+.form input[type=submit]:hover {
+  background-color: #fff;
+  color: #1C1C1C;
+  cursor: pointer;
 }
 .form__check-wrap {
   text-align: center;
