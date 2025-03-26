@@ -90,8 +90,19 @@ table {
 
   @include tab{
     margin: 0 0 32px;
-
   }
+
+  span {
+    display: block;
+    font-size: 20px;
+
+    @include tab{
+      font-size: 16px;
+  
+    }
+  }
+
+
 }
 
 .section-style {
@@ -218,10 +229,10 @@ table {
 // わらべ
 
 .main {
-  padding: 70px 0 0;
+  padding: 60px 0 0;
 
   @include tab {
-    padding: 60px 0 0 0;
+    padding: 52px 0 0 0;
   }
 
   &__section-inner {

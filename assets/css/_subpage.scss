@@ -26,7 +26,22 @@
 
  .page-company {
 
-  &__main-visual {}
+  &__main-visual {
+
+    margin: 0 0 120px;
+
+    @include tab{
+      margin: 0 0 54px;
+
+    }
+  }
+
+  &__table-wrap {
+    max-width: 980px;
+    margin: 0 auto;
+  }
+
+  &__table {}
 
   &__ {}
 
@@ -41,6 +56,97 @@
   &__ {}
 
   &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+}
+
+
+.outline {
+  padding: 0 12px;
+
+  &__table-wrap {
+    max-width: 680px;
+    margin: 0 auto 80px;
+  }
+
+  &__table {
+    width: 100%;
+
+    tr {
+      border-top: 1px solid #1C1C1C;
+
+      &:last-child {
+        border-bottom: 1px solid #1C1C1C;
+
+      }
+    }
+
+    th {
+      text-align: left;
+      padding: 12px 2px;
+    }
+
+    td {
+      text-align: left;
+      padding: 12px 2px;
+    }
+
+  }
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+
+}
+
+.aaa {
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+
+}
+
+.aaa {
 
   &__ {}
 
