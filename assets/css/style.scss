@@ -29,7 +29,7 @@ header
   top: 0;
   width: 100%;
   transition: transform 0.3s;
-  background-color: #fff;
+  background:rgba(255, 255, 255, 1);
   height: 58px;
 
   @include tab {
