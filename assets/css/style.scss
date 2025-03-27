@@ -197,6 +197,7 @@ header
  ================================= */
 // メインビジュアル
 .main-visual {
+  
 
   &__video {
 
@@ -236,7 +237,7 @@ header
 
 
 .top-history {
-  padding: 0 12px 140px;
+  padding: 40px 12px 140px;
 
   @include tab {
     padding: 0 12px 60px;
@@ -347,7 +348,6 @@ header
 
   @include tab {
     padding: 0 12px 80px;
-
   }
 
   &__lead {
@@ -482,6 +482,7 @@ footer
     display: flex;
     color: #fff;
     gap: 10px;
+    font-size: 14px;
 
 
 
@@ -509,7 +510,8 @@ footer
   &__menu-item {
     color: #fff;
     border-left: 1px solid #fff;
-    padding: 0 12px;
+    padding: 0 16px;
+    font-size: 14px;
 
     &:first-child {
       border-left: none;
