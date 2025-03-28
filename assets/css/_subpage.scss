@@ -24,16 +24,13 @@
 会社概要・採用情報
  ================================= */
 
- .page-company {
-
-
-}
+.page-company {}
 
 
 .outline {
   padding: 0 12px 80px;
 
-  @include tab{
+  @include tab {
     padding: 0 12px 48px;
   }
 
@@ -88,7 +85,7 @@
   padding: 80px 12px;
   background-color: #1C1C1C;
 
-  @include tab{
+  @include tab {
     padding: 48px 12px 48px;
   }
 
@@ -98,7 +95,7 @@
     color: #fff;
   }
 
-  
+
 
   &__ {}
 
@@ -123,7 +120,7 @@
 
   padding: 80px 12px;
 
-  @include tab{
+  @include tab {
     padding: 48px 12px 48px;
   }
 
@@ -153,7 +150,7 @@
 
   padding: 80px 12px;
 
-  @include tab{
+  @include tab {
     padding: 48px 12px 48px;
   }
 
@@ -161,30 +158,28 @@
 
   &__table-wrap {
     max-width: 720px;
-    margin: 0 auto ;
+    margin: 0 auto;
   }
 
   &__table {
     width: 100%;
     margin: 0 0 40px;
-    
 
-    tr {
 
-    }
+    tr {}
 
     th {
       text-align: left;
       padding: 12px 2px;
       font-weight: 100;
       width: 140px;
-      
-     
 
-      @include tab{
-      display: block;
-      width: 100%;
-      padding: 12px 2px 0;
+
+
+      @include tab {
+        display: block;
+        width: 100%;
+        padding: 12px 2px 0;
 
       }
     }
@@ -195,7 +190,7 @@
       vertical-align: top;
 
 
-      @include tab{
+      @include tab {
         display: block;
         padding: 0 0 12px;
 
@@ -221,6 +216,7 @@
 
 
   }
+
   &__link {
     text-decoration: underline;
   }
@@ -276,288 +272,228 @@
 }
 
 /* =================================
-
+ブログ
  ================================= */
 
-.aaa {
+.page-blog {
 
-  &__ {}
 
-  &__ {}
 
-  &__ {}
 
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-
-}
-
-/* =================================
-
- ================================= */
-
-.aaa {
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-
-}
-
-/* =================================
-
- ================================= */
-
-.aaa {
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-
-}
-
-
-
-/* =================================
-お問い合わせ
- ================================= */
-
-.page-contact {
-
-  &__ttl {
-    max-width: 1220px;
+  &__inner {
+    max-width: 880px;
     margin: 0 auto;
-    font-size: 22px;
-    color: #44a136;
-    padding: 12px 12px 12px 60px;
-
-    @include tab {
-      font-size: 20px;
-      padding: 10px 12px 10px 24px;
-
-
-    }
-  }
-
-  &__section {
-    background-color: #f8fbf2;
-    padding: 40px 12px 80px;
-
-    @include sp {
-      padding: 40px 12px;
-
-    }
-  }
-
-  &__section-inner {
-    max-width: 1100px;
-    margin: 0 auto;
-  }
-
-  &__text {
-    margin: 0 0 40px;
-
-    span {
-      color: #ed1c24;
-    }
-  }
-
-  &__form-wrap {
-    background-color: #fff;
     border-radius: 12px;
     padding: 40px;
-    margin: 0 0 40px;
 
-    @include tab {
-      padding: 12px;
+    @include sp {
+      padding: 20px;
+
     }
+
   }
 
-  &__form-table {
-    width: 100%;
+  &__ttl {
+    margin: 0 0 24px;
 
-    th {
-      text-align: left;
-      color: #44a136;
-      padding: 14px 0 24px;
-      width: 280px;
-      vertical-align: top;
+    @include sp {
+      margin: 0 0 4px;
 
-      @include pc {
-        width: 180px;
-      }
-
-      @include tab {
-        width: 100%;
-        display: block;
-        padding: 16px 0 2px;
-
-
-      }
-
-      span {
-        color: #ed1c24;
-        display: inline-block;
-        margin: 0 0 0 8px;
-      }
     }
 
-    td {
-      padding: 16px 0 0;
-      @include tab {
-        width: 100%;
-        display: block;
+    &--sub {
+      margin: 0 0 12px;
+
+      @include sp {
+        text-align: left;
       }
     }
   }
 
-  &__input {
-    border: #44a136 1px solid;
-    width: 100%;
-    padding: 8px;
+  &__article-wrap {
+
+    background-color: #fff;
+    max-width: 980px;
+    margin: 0 auto 80px;
+    border-radius: 12px;
+
+    @include sp {
+      margin: 0 auto 40px;
+
+
+    }
+  }
+
+  &__article {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    align-items: center;
+    border-bottom: #777777 1px solid;
+    padding: 8px 2px;
+
+    &:first-child {
+      border-top: #777777 1px solid;
+    }
+
+    @include sp {
+      gap: 8px;
+
+    }
 
   }
 
-  &__textarea {
-    border: #44a136 1px solid;
-    width: 100%;
-    padding: 8px;
+  &__date {
+    font-size: 13px;
 
   }
 
-  &__bottom-text {
+  &__cat {
+    font-size: 13px;
+    border: #d0bd9b 2px solid;
+    width: 90px;
     text-align: center;
-    margin: 0 0 12px;
+    border-radius: 20px;
+    line-height: 1;
+    padding: 4px;
+
+    @include sp {
+      margin: 0 0 0 12px;
+    }
+
+    &--kaiin {
+      border: #d09bbf 2px solid;
+
+    }
+
+    &--koza {
+      border: #9bb2d0 2px solid;
+
+    }
   }
 
-  &__last-text-link {
-    color: #158ecf;
-    text-decoration: underline;
+  &__article-ttl-wrap {}
+
+  &__article-ttl {
+    font-size: 17px;
   }
 
-  &__checkbox-wrap {
+  &__article-extract {
+    font-size: 14px;
+  }
+
+  &__pager {
     text-align: center;
-    margin: 0 0 40px;
-
-    label {
-      color: #44a136;
-    }
   }
 
-  &__checkbox {}
 
-  &__btn-wrap {
-    position: relative;
-    width: 200px;
+  &__ {}
 
-    &::after {
-      content: "";
-      width: 8px;
-      height: 8px;
-      border: 0;
-      border-top: 2px solid #fff;
-      border-right: 2px solid #fff;
-      transform: rotate(45deg);
-      position: absolute;
-      top: 50%;
-      right: 25px;
-      margin-top: -6px;
-    }
+  &__ {}
 
-  }
+  &__ {}
 
-  &__btn {
-    width: 200px;
-  }
+  &__ {}
 
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+
+}
+
+/* =================================
+
+ ================================= */
+
+.aaa {
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+
+}
+
+/* =================================
+
+ ================================= */
+
+.aaa {
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
 
 
 }
@@ -576,9 +512,9 @@
     color: #ababab;
     margin: 0 0 0 24px;
 
-    @include sp{
-    display: block;
-    margin: 0;
+    @include sp {
+      display: block;
+      margin: 0;
 
     }
   }
@@ -590,14 +526,14 @@
   &__content {
     padding: 32px 12px;
 
-    @include sp{
+    @include sp {
       padding: 12px 8px;
 
     }
   }
 
   &__bottom-hr {
-     margin: 0 0 40px!important;
+    margin: 0 0 40px !important;
   }
 
   &__ {}
@@ -630,4 +566,3 @@
 
 
 }
-

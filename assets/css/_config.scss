@@ -167,6 +167,19 @@ th,td {
     max-width: 880px;
     margin: 0 auto;
   }
+
+
+  &__breadcrumbs {
+    max-width: 1040px;
+    margin: -114px auto 80px;
+    font-size: 14px;
+    padding: 0 12px;
+
+    @include tab{
+      margin: -34px auto 40px;
+
+    }
+  }
 }
 
 // ローディング画面
