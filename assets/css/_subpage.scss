@@ -124,9 +124,28 @@
     padding: 48px 12px 48px;
   }
 
-  &__ {}
+  &__lead {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0 0 18px;
+    text-align: center;
 
-  &__ {}
+
+  }
+
+  &__text {
+    text-align: center;
+    margin: 0 0 12px;
+
+    @include sp{
+      text-align: left;
+      }
+
+    &:last-of-type {
+      margin: 0;
+    }
+
+  }
 
   &__ {}
 

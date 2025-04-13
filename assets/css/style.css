@@ -392,6 +392,24 @@ th, td {
     padding: 48px 12px 48px;
   }
 }
+.recruit__lead {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0 0 18px;
+  text-align: center;
+}
+.recruit__text {
+  text-align: center;
+  margin: 0 0 12px;
+}
+@media (max-width: 600px) {
+  .recruit__text {
+    text-align: left;
+  }
+}
+.recruit__text:last-of-type {
+  margin: 0;
+}
 .form {
   padding: 80px 12px;
 }
