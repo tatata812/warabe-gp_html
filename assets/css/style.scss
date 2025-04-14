@@ -222,6 +222,18 @@ header
     }
   }
 
+  &__video-sp {
+
+    width: 100%;
+
+
+    video {
+width: 100%;
+    }
+  }
+
+
+
   &__text {
     height: 100vh;
     display: flex;
@@ -230,6 +242,14 @@ header
 
     p {
       color: #fff;
+    }
+
+    @include tab{
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     }
   }
 }

@@ -585,3 +585,61 @@
 
 
 }
+
+/* =================================
+記事詳細
+ ================================= */
+
+ .single {
+
+  &__ttl {
+    margin: 0 0 40px;
+  }
+
+  &__content {
+    max-width: 880px;
+    margin: 0 auto;
+    border-top: #777777 solid 1px;
+    border-bottom: #777777 solid 1px;
+    padding: 24px 12px;
+
+  }
+
+  &__date {
+    max-width: 880px;
+    margin: 0 auto;
+    text-align: right;
+    padding: 0 8px 0 0;
+    font-size: 13px;
+  }
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+
+}
